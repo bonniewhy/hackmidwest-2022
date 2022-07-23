@@ -1,7 +1,6 @@
 package com.hackmidwest.bragbook.rest;
 
 import com.hackmidwest.bragbook.domain.entity.Journey;
-import com.hackmidwest.bragbook.domain.repository.JourneyRepository;
 import com.hackmidwest.bragbook.domain.service.JourneyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
@@ -19,18 +18,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/journey")
 public class JourneyController {
 
-    private final JourneyRepository journeyRepository;
     private final JourneyService journeyService;
 
     @GetMapping(path = "/{journeyId}")
     public Journey getJourneyByTitle(@PathVariable String journeyId) {
-        return journeyRepository.getJourneyById(journeyId);
+        return journeyService.getJourneyById(journeyId);
     }
 
     @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})
     public String saveJourney(@RequestBody Journey journey) {
-        journeyRepository.saveJourney(journey);
-        return "journey saved";
+        String savedJourneyId = journeyService.saveJourney(journey);
+        return "journey saved: " + savedJourneyId;
     }
 
     @PutMapping(path = "/{journeyId}", consumes = {MediaType.APPLICATION_JSON_VALUE})
@@ -40,7 +38,7 @@ public class JourneyController {
 
     @DeleteMapping(path = "/{journeyId}")
     public String deleteJourney(@PathVariable String journeyId) {
-        journeyRepository.deleteJourney(journeyId);
+        journeyService.deleteJourney(journeyId);
         return "journey deleted";
     }
 }

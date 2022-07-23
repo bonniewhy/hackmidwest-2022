@@ -2,6 +2,7 @@ package com.hackmidwest.bragbook.infrastructure.repository;
 
 import com.hackmidwest.bragbook.domain.entity.Journey;
 import com.hackmidwest.bragbook.domain.repository.JourneyRepository;
+import com.hackmidwest.bragbook.exception.JourneyNotFoundException;
 import org.springframework.context.annotation.Lazy;
 
 import java.util.List;
@@ -18,7 +19,11 @@ public class JourneyMongoRepositoryImpl implements JourneyRepository {
     public Journey getJourneyById(String journeyId) {
         Optional<Journey> journey = journeyRepository.findById(journeyId);
 
-        return journey.orElseGet(() -> new Journey().builder().build());
+        if (journey.isPresent()) {
+            return journey.get();
+        } else {
+            throw new JourneyNotFoundException();
+        }
     }
 
     @Override
@@ -27,8 +32,8 @@ public class JourneyMongoRepositoryImpl implements JourneyRepository {
     }
 
     @Override
-    public void saveJourney(Journey journey) {
-        journeyRepository.save(journey);
+    public Journey saveJourney(Journey journey) {
+        return journeyRepository.save(journey);
     }
 
     @Override

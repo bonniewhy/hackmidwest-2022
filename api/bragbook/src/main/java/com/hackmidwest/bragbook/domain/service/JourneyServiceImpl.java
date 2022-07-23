@@ -12,6 +12,17 @@ public class JourneyServiceImpl implements JourneyService{
     private final JourneyRepository journeyRepository;
 
     @Override
+    public String saveJourney(Journey journey) {
+        Journey savedJourney = journeyRepository.saveJourney(journey);
+        return savedJourney.getId();
+    }
+
+    @Override
+    public Journey getJourneyById(String journeyId) {
+        return journeyRepository.getJourneyById(journeyId);
+    }
+
+    @Override
     public Journey updateJourney(String journeyId, Journey journey) {
         Journey journeyToUpdate = journeyRepository.getJourneyById(journeyId);
         Journey updatedJourney = new Journey().builder()
@@ -26,5 +37,10 @@ public class JourneyServiceImpl implements JourneyService{
 
         journeyRepository.saveJourney(journey);
         return updatedJourney;
+    }
+
+    @Override
+    public void deleteJourney(String journeyId) {
+        journeyRepository.deleteJourney(journeyId);
     }
 }
