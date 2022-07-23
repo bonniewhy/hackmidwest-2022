@@ -16,6 +16,7 @@
 		D3692A48288C6589003D416C /* BragBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */; };
 		D7804D49288C76920038AC07 /* BragEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* BragEntry.swift */; };
 		D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D4A288C79630038AC07 /* EntryCardView.swift */; };
+		FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D7804D48288C76920038AC07 /* BragEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragEntry.swift; sourceTree = "<group>"; };
 		D7804D4A288C79630038AC07 /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
+		FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				D3692A2A288C6586003D416C /* BragBookApp.swift */,
 				D3692A2C288C6586003D416C /* ContentView.swift */,
 				D7804D4A288C79630038AC07 /* EntryCardView.swift */,
+				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
 				D3692A2E288C6588003D416C /* Assets.xcassets */,
 				D3692A30288C6588003D416C /* Preview Content */,
 			);
@@ -275,6 +278,7 @@
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7804D49288C76920038AC07 /* BragEntry.swift in Sources */,
 				D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */,
+				FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
