@@ -14,6 +14,7 @@
 		D3692A3C288C6588003D416C /* BragBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A3B288C6588003D416C /* BragBookTests.swift */; };
 		D3692A46288C6589003D416C /* BragBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A45288C6589003D416C /* BragBookUITests.swift */; };
 		D3692A48288C6589003D416C /* BragBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */; };
+		D7681443288C99DB0011C80B /* BragUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7681442288C99DB0011C80B /* BragUser.swift */; };
 		D7804D49288C76920038AC07 /* BragEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* BragEntry.swift */; };
 		D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D4A288C79630038AC07 /* EntryCardView.swift */; };
 		FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */; };
@@ -47,6 +48,7 @@
 		D3692A41288C6589003D416C /* BragBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BragBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3692A45288C6589003D416C /* BragBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITests.swift; sourceTree = "<group>"; };
 		D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D7681442288C99DB0011C80B /* BragUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragUser.swift; sourceTree = "<group>"; };
 		D7804D48288C76920038AC07 /* BragEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragEntry.swift; sourceTree = "<group>"; };
 		D7804D4A288C79630038AC07 /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
 		FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				D7804D48288C76920038AC07 /* BragEntry.swift */,
+				D7681442288C99DB0011C80B /* BragUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				D3692A2D288C6586003D416C /* ContentView.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
+				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,
 				D7804D49288C76920038AC07 /* BragEntry.swift in Sources */,
 				D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */,
 				FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */,

@@ -147,3 +147,6 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+# Xcode files
+*.xcuserstate
