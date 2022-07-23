@@ -5,6 +5,7 @@ import com.hackmidwest.bragbook.domain.repository.JourneyRepository;
 import org.springframework.context.annotation.Lazy;
 
 import java.util.List;
+import java.util.Optional;
 
 public class JourneyMongoRepositoryImpl implements JourneyRepository {
     private JourneyMongoRepository journeyRepository;
@@ -14,12 +15,24 @@ public class JourneyMongoRepositoryImpl implements JourneyRepository {
     }
 
     @Override
-    public Journey getJourneyByTitle(String title) {
-        return journeyRepository.findItemByTitle(title);
+    public Journey getJourneyById(String journeyId) {
+        Optional<Journey> journey = journeyRepository.findById(journeyId);
+
+        return journey.orElseGet(() -> new Journey().builder().build());
     }
 
     @Override
     public List<Journey> getAll() {
         return journeyRepository.findAll();
+    }
+
+    @Override
+    public void saveJourney(Journey journey) {
+        journeyRepository.save(journey);
+    }
+
+    @Override
+    public void deleteJourney(String journeyId) {
+        journeyRepository.deleteById(journeyId);
     }
 }

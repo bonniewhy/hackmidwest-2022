@@ -5,6 +5,8 @@ import com.hackmidwest.bragbook.domain.entity.Journey;
 import java.util.List;
 
 public interface JourneyRepository {
-    Journey getJourneyByTitle(String title);
+    Journey getJourneyById(String journeyId);
     List<Journey> getAll();
+    void saveJourney(Journey journey);
+    void deleteJourney(String journeyId);
 }
