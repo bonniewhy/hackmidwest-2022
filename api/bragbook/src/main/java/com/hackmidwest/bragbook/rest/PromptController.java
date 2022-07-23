@@ -1,0 +1,42 @@
+package com.hackmidwest.bragbook.rest;
+
+import com.hackmidwest.bragbook.domain.entity.Journey;
+import com.hackmidwest.bragbook.domain.entity.Prompt;
+import com.hackmidwest.bragbook.domain.repository.PromptRepository;
+import com.hackmidwest.bragbook.domain.service.JourneyService;
+import com.hackmidwest.bragbook.domain.service.PromptService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
+
+@RequiredArgsConstructor
+@RestController
+@RequestMapping("/prompt")
+public class PromptController {
+
+    private final PromptRepository promptRepository;
+    private final PromptService promptService;
+
+    @GetMapping(path = "/{promptId}")
+    public Prompt getPromptByTitle(@PathVariable String promptId) {
+        return promptRepository.getPromptById(promptId);
+    }
+
+    @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})
+    public String savePrompt(@RequestBody Prompt prompt) {
+        promptRepository.savePrompt(prompt);
+        return "prompt saved";
+    }
+
+    @PutMapping(path = "/{promptId}", consumes = {MediaType.APPLICATION_JSON_VALUE})
+    public Prompt updatePrompt(@PathVariable String promptId, @RequestBody Prompt prompt) {
+        return promptService.updatePrompt(promptId, prompt);
+    }
+
+    @DeleteMapping(path = "/{promptId}")
+    public String deletePrompt(@PathVariable String promptId) {
+        promptRepository.deletePrompt(promptId);
+        return "prompt deleted";
+    }
+
+}
