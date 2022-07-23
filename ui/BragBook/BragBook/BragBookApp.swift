@@ -11,7 +11,9 @@ import SwiftUI
 struct BragBookApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                HomeScreenView(bragUser: BragUser.sampleUsers[0])
+            }
         }
     }
 }
