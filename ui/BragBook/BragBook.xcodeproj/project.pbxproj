@@ -14,6 +14,7 @@
 		D3692A3C288C6588003D416C /* BragBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A3B288C6588003D416C /* BragBookTests.swift */; };
 		D3692A46288C6589003D416C /* BragBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A45288C6589003D416C /* BragBookUITests.swift */; };
 		D3692A48288C6589003D416C /* BragBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */; };
+		FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D3692A41288C6589003D416C /* BragBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BragBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3692A45288C6589003D416C /* BragBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITests.swift; sourceTree = "<group>"; };
 		D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				D3692A2A288C6586003D416C /* BragBookApp.swift */,
 				D3692A2C288C6586003D416C /* ContentView.swift */,
+				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
 				D3692A2E288C6588003D416C /* Assets.xcassets */,
 				D3692A30288C6588003D416C /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				D3692A2D288C6586003D416C /* ContentView.swift in Sources */,
 				D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */,
+				FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
