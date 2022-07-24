@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct EntryCardView: View {
-    var bragEntry: BragEntry
+    var bragEntry: Entry
     var body: some View {
         VStack {
-            ForEach(bragEntry.tags) { tag in
+            ForEach(bragEntry.tags, id: \.self) { tag in
                 TagView(bragTag: tag)
             }
             Text(bragEntry.title)
                 .font(.headline)
-            Text(bragEntry.description)
+            Text(bragEntry.body)
         }
         .padding()
     }
 }
 
 struct EntryCardView_Previews: PreviewProvider {
-    static var bragEntry = BragEntry.sampleData[0]
+    static var bragEntry = Entry.sampleEntry
      static var previews: some View {
          EntryCardView(bragEntry: bragEntry)
      }
