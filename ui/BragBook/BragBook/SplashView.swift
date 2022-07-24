@@ -18,19 +18,14 @@ struct SplashView: View {
                     )
                     .textCase(.uppercase)
                     .padding(.bottom, 100)
+                    .foregroundColor(Color.white)
                 Text("Tiramisu bonbon donut brownie biscuit sesame snaps wafer apple pie pie. Pastry powder cake lollipop caramels.")
                     .padding(.bottom)
+                    .foregroundColor(Color.white)
                 Text("- Tira Misu")
                     .padding(.leading, 225)
+                    .foregroundColor(Color.white)
             }
-            .foregroundColor(.white)
-        }
-    }
-}
-
-struct SplashView_Previews: PreviewProvider {
-    static var previews: some View {
-        SplashView()
             .background(
                 Image("sunflower")
                     .scaledToFill()
@@ -39,5 +34,12 @@ struct SplashView_Previews: PreviewProvider {
                             .opacity(0.4)
                     )
             )
+        }
+    }
+}
+
+struct SplashView_Previews: PreviewProvider {
+    static var previews: some View {
+        SplashView()
     }
 }
