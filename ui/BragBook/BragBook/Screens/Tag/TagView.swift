@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct TagView: View {
-    var bragTag: BragTag
+    var bragTag: Tag
     var body: some View {
-        Text(bragTag.name)
+        Text(bragTag.title)
             .padding()
             .foregroundColor(.white)
             .background(.blue)
@@ -18,9 +18,9 @@ struct TagView: View {
     }
 }
 
-struct TagView_Previews: PreviewProvider {
-    static var bragTag = BragTag.sampleTags[0]
-     static var previews: some View {
-         TagView(bragTag: bragTag)
-     }
-}
+//struct TagView_Previews: PreviewProvider {
+//    static var bragTag = Tag.sampleTag
+//    static var previews: some View {
+//        TagView(bragTag: bragTag)
+//    }
+//}

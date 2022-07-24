@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CreateProfileView: View {
+    
     @State private var firstName: String = ""
     @State private var lastName: String = ""
     @State private var city: String = ""

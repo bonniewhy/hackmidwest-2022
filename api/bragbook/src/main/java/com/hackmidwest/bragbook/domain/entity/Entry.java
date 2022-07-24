@@ -25,7 +25,7 @@ public class Entry {
     private List<Type> types;
     private List<Person> people;
     private boolean isPublic;
-    private List<Status> status;
+//    private List<Status> status;
     private ZonedDateTime completedDate;
 
 }
