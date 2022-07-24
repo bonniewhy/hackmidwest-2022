@@ -2,8 +2,10 @@ package com.hackmidwest.bragbook.infrastructure.repository;
 
 import com.hackmidwest.bragbook.domain.entity.Prompt;
 import com.hackmidwest.bragbook.domain.repository.PromptRepository;
+import com.hackmidwest.bragbook.exception.PromptNotFoundException;
 import org.springframework.context.annotation.Lazy;
 
+import java.util.List;
 import java.util.Optional;
 
 public class PromptMongoRepositoryImpl implements PromptRepository {
@@ -17,8 +19,15 @@ public class PromptMongoRepositoryImpl implements PromptRepository {
     public Prompt getPromptById(String promptId) {
         Optional<Prompt> prompt = promptRepository.findById(promptId);
 
-        return prompt.orElseGet(() -> new Prompt().builder().build());
+        if (prompt.isPresent()) {
+            return prompt.get();
+        } else {
+            throw new PromptNotFoundException();
+        }
     }
+
+    @Override
+    public List<Prompt> getAllPrompts() {return promptRepository.findAll();}
 
     @Override
     public Prompt savePrompt(Prompt prompt) {

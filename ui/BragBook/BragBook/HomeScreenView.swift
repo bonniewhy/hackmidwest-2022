@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeScreenView: View {
-    var bragUser: BragUser
+    var bragUser: Person
     var body: some View {
         VStack {
             Image("codergirl")
@@ -21,9 +21,8 @@ struct HomeScreenView: View {
                 Text(bragUser.lastName)
                     .font(.headline)
             }
-            Text(bragUser.bio)
             List {
-                ForEach(bragUser.entries) { entry in
+                ForEach(bragUser.entries, id: \.self) { entry in
                     EntryCardView(bragEntry: entry)
                 }
             }
@@ -33,12 +32,11 @@ struct HomeScreenView: View {
 }
 
 struct HomeScreenView_Previews: PreviewProvider {
-    static var bragUser = BragUser.sampleUsers[0]
-     static var previews: some View {
-//         HomeScreenView(bragUser: bragUser)
-         NavigationView {
-             HomeScreenView(bragUser: BragUser.sampleUsers[0])
-         }
-     }
+    static var bragUser = Person.samplePerson
+    static var previews: some View {
+        NavigationView {
+            HomeScreenView(bragUser: Person.samplePerson)
+        }
+    }
 }
 
