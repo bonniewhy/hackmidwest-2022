@@ -2,12 +2,12 @@ import Foundation
 
 struct Journey: Decodable, Hashable {
     let id: String
-    let title: String
-    let description: String
-    let prompts: [Prompt]
-    let startDate: Date
+    let title: String?
+    let description: String?
+    let prompts: [Prompt]?
+    let startDate: Date?
     let completedDate: Date?
-    let isCompleted: Bool
+    let isCompleted: Bool?
 
     static func == (lhs: Journey, rhs: Journey) -> Bool {
         return lhs.id == rhs.id

@@ -1,13 +1,8 @@
-//
-//  JourneyView.swift
-//  BragBook
-//
-//  Created by Shanice Gipson on 7/23/22.
-//
-
 import SwiftUI
 
 struct JourneyView: View {
+    @StateObject var viewModel: ViewModel = ViewModel()
+
     var body: some View {
         VStack {
             Image(systemName: "chevron.backward").foregroundColor(Color("Dark Green"))
@@ -42,7 +37,7 @@ struct JourneyView: View {
                 .padding(.top, 30)
                 .padding(.leading, 20)
                 .padding(.bottom, 15)
-                
+
                 HStack {
                 Text("Show All")
                     .foregroundColor(Color("Green"))
@@ -71,11 +66,37 @@ struct JourneyView: View {
                 Spacer()
             }
         }
+        .onAppear { viewModel.load() }
     }
 }
 
 struct JourneyView_Previews: PreviewProvider {
     static var previews: some View {
         JourneyView()
+    }
+}
+
+extension JourneyView {
+    class ViewModel: ObservableObject {
+        @Published var journeys: [Journey] = []
+
+        let getAllJourneysUseCase: GetAllJourneysUseCase
+
+        init(getAllJourneysUseCase: GetAllJourneysUseCase = GetAllJourneysInteractor()) {
+            self.getAllJourneysUseCase = getAllJourneysUseCase
+        }
+        
+        func load() {
+            getAllJourneysUseCase.execute { [weak self] result in
+                guard let self = self else {
+                    return
+                }
+
+                switch result {
+                case .success(let journeys): self.journeys = journeys
+                case .failure(let error): print(error)
+                }
+            }
+        }
     }
 }
