@@ -1,11 +1,16 @@
 import Foundation
 
 class GetAllJourneysInteractor: GetAllJourneysUseCase {
-    func execute(with url: String, completion: @escaping (Result<[Journey], Error>) -> ()) {
+    func execute(completion: @escaping (Result<[Journey], Error>) -> Void) {
         // TODO: Handle error here. (NetworkError)
-        guard let url = URL(string: url) else { return }
+        guard let url = URL(string: "http://localhost:8080/journey/") else { return }
 
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            var something = "Does this hit?"
+            
             if let error = error {
                 completion(.failure(error))
                 return
@@ -19,5 +24,7 @@ class GetAllJourneysInteractor: GetAllJourneysUseCase {
                 completion(.failure(jsonError))
             }
         }
+
+        task.resume()
     }
 }

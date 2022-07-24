@@ -12,8 +12,9 @@ struct BragBookApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                SplashView()
-                HomeScreenView(bragUser: Person.samplePerson)
+                JourneyView()
+//                SplashView()
+//                HomeScreenView(bragUser: Person.samplePerson)
             }
         }
     }
