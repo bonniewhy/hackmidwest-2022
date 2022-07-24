@@ -34,7 +34,7 @@ public class PromptServiceImpl implements PromptService{
                 .journey(prompt.getJourney())
                 .build();
 
-        promptRepository.savePrompt(prompt);
+        promptRepository.savePrompt(updatedPrompt);
         return updatedPrompt;
     }
 
