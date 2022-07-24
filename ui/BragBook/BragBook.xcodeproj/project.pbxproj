@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A2A288C6586003D416C /* BragBookApp.swift */; };
-		D3692A2D288C6586003D416C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A2C288C6586003D416C /* ContentView.swift */; };
+		D3692A2D288C6586003D416C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A2C288C6586003D416C /* SplashView.swift */; };
 		D3692A2F288C6588003D416C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3692A2E288C6588003D416C /* Assets.xcassets */; };
 		D3692A32288C6588003D416C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3692A31288C6588003D416C /* Preview Assets.xcassets */; };
 		D3692A3C288C6588003D416C /* BragBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A3B288C6588003D416C /* BragBookTests.swift */; };
@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		D3692A27288C6586003D416C /* BragBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BragBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3692A2A288C6586003D416C /* BragBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookApp.swift; sourceTree = "<group>"; };
-		D3692A2C288C6586003D416C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3692A2C288C6586003D416C /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		D3692A2E288C6588003D416C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3692A31288C6588003D416C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3692A37288C6588003D416C /* BragBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BragBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				D3692A2A288C6586003D416C /* BragBookApp.swift */,
-				D3692A2C288C6586003D416C /* ContentView.swift */,
+				D3692A2C288C6586003D416C /* SplashView.swift */,
 				D7804D4A288C79630038AC07 /* EntryCardView.swift */,
 				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
 				FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */,
@@ -286,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3692A2D288C6586003D416C /* ContentView.swift in Sources */,
+				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */,
