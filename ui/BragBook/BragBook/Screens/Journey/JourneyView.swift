@@ -5,11 +5,6 @@ struct JourneyView: View {
 
     var body: some View {
         VStack {
-            Image(systemName: "chevron.backward").foregroundColor(Color("Dark Green"))
-                .font(.system(size: 30, weight: .regular))
-                .padding(.leading, 20)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            Spacer()
             Text("Hi, Savannah")
                 .foregroundColor(Color("Dark Green"))
                 .font(.system(size: 20, weight: .semibold))

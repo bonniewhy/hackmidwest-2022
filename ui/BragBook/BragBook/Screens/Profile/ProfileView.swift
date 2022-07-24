@@ -19,16 +19,13 @@ struct ProfileView: View {
     
     @ViewBuilder
     var topNavSection: some View {
-        HStack {
-            Image(systemName: "chevron.backward").foregroundColor(Color("Dark Green"))
-                .font(.system(size: 30, weight: .regular))
-                .padding(.leading, 20)
-            Spacer()
+        VStack {
             Image(systemName: "pencil").foregroundColor(Color("Dark Green"))
                 .font(.system(size: 30, weight: .regular))
                 .padding(.trailing, 20)
+                .padding(.bottom, 65)
+                .frame(maxWidth: .infinity, alignment: .trailing)
         }
-        .padding(.bottom, 20)
     }
     
     @ViewBuilder
@@ -39,6 +36,7 @@ struct ProfileView: View {
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle())
+                .frame(width: 200, height: 200)
             VStack {
                 Text("Savannah Brooks")
                     .foregroundColor(Color("Dark Green"))
