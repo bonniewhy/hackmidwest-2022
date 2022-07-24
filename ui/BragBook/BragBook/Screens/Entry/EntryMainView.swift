@@ -8,33 +8,37 @@
 import SwiftUI
 
 struct EntryMainView: View {
+    let entries: [FakeEntry]
+
     var body: some View {
         ScrollView {
             VStack {
-                HStack {
-                    Image(systemName: "chevron.backward").foregroundColor(Color("Dark Green"))
-                        .font(.system(size: 30, weight: .regular))
-                        .padding(.leading, 20)
-                    Spacer()
-                    Image(systemName: "plus").foregroundColor(Color("Dark Green"))
-                        .font(.system(size: 30, weight: .regular))
-                        .padding(.trailing, 20)
-                }
-                .padding(.bottom, 20)
-                
                 Text("ACHIEVEMENTS")
                     .foregroundColor(Color("Dark Green"))
                     .font(.system(size: 30, weight: .semibold))
                     .frame(maxWidth: .infinity, alignment: .center)
+
+                ForEach(entries) {
+                    EntryCardView(bragEntry: $0)
+                }
                 
                 Spacer()
             }
-        }.background(Color("Orange"))
+        }
+        .background(Color("orange"))
+        .navigationBarItems(leading:
+                                Image(systemName: "chevron.backward").foregroundColor(Color("Dark Green"))
+                                    .font(.system(size: 30, weight: .regular))
+                                    .padding(.leading, 20),
+                            trailing:
+                                Image(systemName: "plus").foregroundColor(Color("Dark Green"))
+                                    .font(.system(size: 30, weight: .regular))
+                                    .padding(.trailing, 20))
     }
 }
-
-struct EntryMainView_Previews: PreviewProvider {
-    static var previews: some View {
-        EntryMainView()
-    }
-}
+//
+//struct EntryMainView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EntryMainView()
+//    }
+//}

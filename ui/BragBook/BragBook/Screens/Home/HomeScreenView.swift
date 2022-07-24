@@ -20,7 +20,7 @@ struct HomeScreenView: View {
                 .font(.headline)
             List {
                 ForEach(viewModel.entries, id: \.self) { entry in
-                    EntryCardView(bragEntry: entry)
+//                    EntryCardView(bragEntry: entry)
                 }
             }
 
@@ -30,6 +30,7 @@ struct HomeScreenView: View {
                     NavigationLink("Create Entry View", destination: CreateEntryView())
                     NavigationLink("Create Profile View", destination: CreateProfileView())
                     NavigationLink("Entry Details View", destination: EntryDetailsView())
+                    NavigationLink("Entry Main View", destination: EntryMainView(entries: FakeEntry.sampleEntryArray))
 //                    NavigationLink("Journey Details View"), destination: JourneyDetailsView()
                     NavigationLink("Journey View", destination: JourneyView())
                     NavigationLink("Profile View", destination: ProfileView())

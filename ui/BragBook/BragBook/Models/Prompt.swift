@@ -31,5 +31,5 @@ extension Prompt {
 //        isCompleted: false
 //    )
 //
-//    static let samplePromptArray: [Prompt] = [samplePrompt]
+//    static let samplePromptArray: [Prompt] = [samplePrompt] 
 }

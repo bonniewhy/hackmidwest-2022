@@ -12,6 +12,11 @@
 		0B9BCFEB288CF6E20027C347 /* HomeProgressCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */; };
 		0B9BCFEF288D30D80027C347 /* JourneyProgressCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BCFEE288D30D80027C347 /* JourneyProgressCardComponent.swift */; };
 		0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB437C0288C8A0500C8570D /* JourneyView.swift */; };
+		D32E7FF5288D864F007AA7A7 /* FakeTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E7FF1288D864F007AA7A7 /* FakeTag.swift */; };
+		D32E7FF6288D864F007AA7A7 /* FakePrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E7FF4288D864F007AA7A7 /* FakePrompt.swift */; };
+		D32E7FF7288D864F007AA7A7 /* FakeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E7FF2288D864F007AA7A7 /* FakeEntry.swift */; };
+		D32E7FF8288D864F007AA7A7 /* FakeJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E7FF3288D864F007AA7A7 /* FakeJourney.swift */; };
+		D32E7FF9288D864F007AA7A7 /* FakePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E7FF0288D864F007AA7A7 /* FakePerson.swift */; };
 		D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A2A288C6586003D416C /* BragBookApp.swift */; };
 		D3692A2D288C6586003D416C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A2C288C6586003D416C /* SplashView.swift */; };
 		D3692A2F288C6588003D416C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3692A2E288C6588003D416C /* Assets.xcassets */; };
@@ -31,7 +36,6 @@
 		D3987D8F288D4FF2007EB43A /* PromptUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D8E288D4FF2007EB43A /* PromptUseCases.swift */; };
 		D3987D91288D509D007EB43A /* TagUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D90288D509D007EB43A /* TagUseCases.swift */; };
 		D3987D93288D5519007EB43A /* PromptInteractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D92288D5519007EB43A /* PromptInteractors.swift */; };
-
 		D72B48DA288D03CD00E60A39 /* CreateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */; };
 		D7681443288C99DB0011C80B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7681442288C99DB0011C80B /* Person.swift */; };
 		D7804D49288C76920038AC07 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* Entry.swift */; };
@@ -69,6 +73,11 @@
 		0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProgressCardComponent.swift; sourceTree = "<group>"; };
 		0B9BCFEE288D30D80027C347 /* JourneyProgressCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyProgressCardComponent.swift; sourceTree = "<group>"; };
 		0BB437C0288C8A0500C8570D /* JourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyView.swift; sourceTree = "<group>"; };
+		D32E7FF0288D864F007AA7A7 /* FakePerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePerson.swift; sourceTree = "<group>"; };
+		D32E7FF1288D864F007AA7A7 /* FakeTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTag.swift; sourceTree = "<group>"; };
+		D32E7FF2288D864F007AA7A7 /* FakeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEntry.swift; sourceTree = "<group>"; };
+		D32E7FF3288D864F007AA7A7 /* FakeJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeJourney.swift; sourceTree = "<group>"; };
+		D32E7FF4288D864F007AA7A7 /* FakePrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePrompt.swift; sourceTree = "<group>"; };
 		D3692A27288C6586003D416C /* BragBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BragBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3692A2A288C6586003D416C /* BragBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookApp.swift; sourceTree = "<group>"; };
 		D3692A2C288C6586003D416C /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -131,6 +140,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D32E7FEF288D864F007AA7A7 /* FakeModels */ = {
+			isa = PBXGroup;
+			children = (
+				D32E7FF2288D864F007AA7A7 /* FakeEntry.swift */,
+				D32E7FF0288D864F007AA7A7 /* FakePerson.swift */,
+				D32E7FF1288D864F007AA7A7 /* FakeTag.swift */,
+				D32E7FF4288D864F007AA7A7 /* FakePrompt.swift */,
+				D32E7FF3288D864F007AA7A7 /* FakeJourney.swift */,
+			);
+			name = FakeModels;
+			path = Components/FakeModels;
+			sourceTree = "<group>";
+		};
 		D3692A1E288C6586003D416C = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +181,7 @@
 				D3692A2E288C6588003D416C /* Assets.xcassets */,
 				D3987D9B288D5C2B007EB43A /* Components */,
 				D7804D47288C760C0038AC07 /* Models */,
+				D32E7FEF288D864F007AA7A7 /* FakeModels */,
 				D3692A30288C6588003D416C /* Preview Content */,
 				D3987D9C288D5C53007EB43A /* Screens */,
 				D3692A54288CE97D003D416C /* Services */,
@@ -443,23 +466,18 @@
 				0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */,
 				D3692A5C288CEF2D003D416C /* NetworkError.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
-
 				0B9420CE288D63AD000971DB /* FiveStarRating.swift in Sources */,
-
 				D3692A5A288CEA24003D416C /* Journey.swift in Sources */,
 				D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7681443288C99DB0011C80B /* Person.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* Tag.swift in Sources */,
 				D7804D49288C76920038AC07 /* Entry.swift in Sources */,
-
 				0B9420CC288D53C5000971DB /* CourseCardComponent.swift in Sources */,
-
 				FCBBF22A288D31E2004247E8 /* EntryMainView.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				0B9BCFEB288CF6E20027C347 /* HomeProgressCardComponent.swift in Sources */,
 				D3692A5A288CEA24003D416C /* Journey.swift in Sources */,
-				D3987D95288D5525007EB43A /* TagInteractors.swift in Sources */,
 				D3692A60288CFBD8003D416C /* Prompt.swift in Sources */,
 				D3692A5E288CF2A5003D416C /* JourneyInteractors.swift in Sources */,
 				D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */,
@@ -468,15 +486,20 @@
 				D3987D93288D5519007EB43A /* PromptInteractors.swift in Sources */,
 				D3692A5E288CF2A5003D416C /* JourneyInteractors.swift in Sources */,
 				D3987D91288D509D007EB43A /* TagUseCases.swift in Sources */,
+				D32E7FF8288D864F007AA7A7 /* FakeJourney.swift in Sources */,
+				D32E7FF5288D864F007AA7A7 /* FakeTag.swift in Sources */,
 				D3987D8F288D4FF2007EB43A /* PromptUseCases.swift in Sources */,
 				D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */,
 				D3987D8B288D2FD9007EB43A /* PersonInteractors.swift in Sources */,
+				D32E7FF7288D864F007AA7A7 /* FakeEntry.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				FCBBF222288D0F31004247E8 /* ProfileView.swift in Sources */,
+				D32E7FF9288D864F007AA7A7 /* FakePerson.swift in Sources */,
 				D3692A68288D2CE1003D416C /* EntryUseCases.swift in Sources */,
 				D7F72ED0288CD04F006083D0 /* CreateProfileView.swift in Sources */,
 				D7681443288C99DB0011C80B /* Person.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* Tag.swift in Sources */,
+				D32E7FF6288D864F007AA7A7 /* FakePrompt.swift in Sources */,
 				D7804D49288C76920038AC07 /* Entry.swift in Sources */,
 				FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */,
 				D3692A66288D2CDF003D416C /* EntryInteractors.swift in Sources */,

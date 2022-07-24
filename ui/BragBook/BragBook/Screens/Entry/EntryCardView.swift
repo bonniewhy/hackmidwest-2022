@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct EntryCardView: View {
-    var bragEntry: Entry
+    var bragEntry: FakeEntry
     var body: some View {
-        VStack {
-            ForEach(bragEntry.tags, id: \.self) { tag in
-                TagView(bragTag: tag)
-            }
-            Text(bragEntry.title)
-                .font(.headline)
-            Text(bragEntry.body)
+        VStack(spacing: 10) {
+            Text(bragEntry.title ?? "")
+                .font(.title)
+            Text(bragEntry.body ?? "")
+                .font(.body)
+//            ForEach(bragEntry.tags, id: \.self) { tag in
+//                TagView(bragTag: tag)
+//            }
+//            Text(bragEntry.title)
+//                .font(.headline)
+//            Text(bragEntry.body)
         }
         .padding()
     }
