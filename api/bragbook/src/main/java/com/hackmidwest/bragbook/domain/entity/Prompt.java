@@ -21,6 +21,6 @@ public class Prompt {
     public String title;
     public Journey journey;
     public boolean completed;
-//    public Entry entry;
+    public Entry entry;
     public ZonedDateTime completedDate;
 }
