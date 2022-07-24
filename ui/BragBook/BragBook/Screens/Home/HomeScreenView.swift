@@ -23,6 +23,19 @@ struct HomeScreenView: View {
                     EntryCardView(bragEntry: entry)
                 }
             }
+
+            VStack(spacing: 10) {
+                Text("Temporary Nav")
+                VStack {
+                    NavigationLink("Create Entry View", destination: CreateEntryView())
+                    NavigationLink("Create Profile View", destination: CreateProfileView())
+                    NavigationLink("Entry Details View", destination: EntryDetailsView())
+//                    NavigationLink("Journey Details View"), destination: JourneyDetailsView()
+                    NavigationLink("Journey View", destination: JourneyView())
+                    NavigationLink("Profile View", destination: ProfileView())
+//                    NavigationLink("Tag View", destination: TagView())
+                }
+            }
         }
         .padding()
         .loadingSplashScreen(isShown: $viewModel.isLoading)
