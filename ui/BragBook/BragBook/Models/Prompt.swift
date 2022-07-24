@@ -20,16 +20,16 @@ struct Prompt: Decodable, Hashable {
 }
 
 extension Prompt {
-    static let samplePrompt: Prompt =
-    Prompt(
-        id: "1",
-        title: "Something",
-        body: "Something",
-        journey: Journey.sampleJourney,
-        entry: Entry.sampleEntry,
-        completedDate: nil,
-        isCompleted: false
-    )
-
-    static let samplePromptArray: [Prompt] = [samplePrompt]
+//    static let samplePrompt: Prompt =
+//    Prompt(
+//        id: "1",
+//        title: "Something",
+//        body: "Something",
+//        journey: Journey.sampleJourney,
+//        entry: Entry.sampleEntry,
+//        completedDate: nil,
+//        isCompleted: false
+//    )
+//
+//    static let samplePromptArray: [Prompt] = [samplePrompt]
 }

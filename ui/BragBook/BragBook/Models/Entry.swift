@@ -27,44 +27,44 @@ struct Entry: Decodable, Hashable {
 }
 
 extension Entry {
-    static let sampleEntry: Entry =
-    Entry(
-        id: "1",
-        title: "Pastry Card Component",
-        body: "I created a card view in SwiftUI for bakery shop's application.",
-        tags: Tag.sampleTagArray,
-        people: Person.samplePersonArray,
-        isPublic: false,
-        completedDate: Date()
-    )
-
-    static let sampleEntryArray: [Entry] = [
-        Entry(
-            id: "1",
-            title: "Pastry Card Component",
-            body: "I created a card view in SwiftUI for bakery shop's application.",
-            tags: Tag.sampleTagArray,
-            people: Person.samplePersonArray,
-            isPublic: false,
-            completedDate: Date()
-        ),
-        Entry(
-            id: "2",
-            title: "Navigation Bar Animation",
-            body: "I implemented an animation for the navigation bar's cta's hover states.",
-            tags: Tag.sampleTagArray,
-            people: Person.samplePersonArray,
-            isPublic: false,
-            completedDate: Date()
-        ),
-        Entry(
-            id: "3",
-            title: "Search Component - AEM",
-            body: "I build the foundational functionality for the search component for a telecommunications company",
-            tags: Tag.sampleTagArray,
-            people: Person.samplePersonArray,
-            isPublic: false,
-            completedDate: Date()
-        )
-    ]
+//    static let sampleEntry: Entry =
+//    Entry(
+//        id: "1",
+//        title: "Pastry Card Component",
+//        body: "I created a card view in SwiftUI for bakery shop's application.",
+//        tags: Tag.sampleTagArray,
+//        people: Person.samplePersonArray,
+//        isPublic: false,
+//        completedDate: Date()
+//    )
+//
+//    static let sampleEntryArray: [Entry] = [
+//        Entry(
+//            id: "1",
+//            title: "Pastry Card Component",
+//            body: "I created a card view in SwiftUI for bakery shop's application.",
+//            tags: Tag.sampleTagArray,
+//            people: Person.samplePersonArray,
+//            isPublic: false,
+//            completedDate: Date()
+//        ),
+//        Entry(
+//            id: "2",
+//            title: "Navigation Bar Animation",
+//            body: "I implemented an animation for the navigation bar's cta's hover states.",
+//            tags: Tag.sampleTagArray,
+//            people: Person.samplePersonArray,
+//            isPublic: false,
+//            completedDate: Date()
+//        ),
+//        Entry(
+//            id: "3",
+//            title: "Search Component - AEM",
+//            body: "I build the foundational functionality for the search component for a telecommunications company",
+//            tags: Tag.sampleTagArray,
+//            people: Person.samplePersonArray,
+//            isPublic: false,
+//            completedDate: Date()
+//        )
+//    ]
 }

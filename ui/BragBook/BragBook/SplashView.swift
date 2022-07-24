@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct SplashView: View {
+    @Binding var isShown: Bool
+
     var body: some View {
-        Group {
+        ZStack(alignment: .center) {
             VStack(alignment: .center) {
                 Text("Brag Book")
                     .font(
                         .largeTitle
-                        .weight(.bold)
+                            .weight(.bold)
                     )
                     .textCase(.uppercase)
                     .padding(.bottom, 100)
@@ -35,11 +37,21 @@ struct SplashView: View {
                     )
             )
         }
+        .opacity(isShown ? 1 : 0)
+    }
+}
+
+public extension View {
+    func loadingSplashScreen(isShown: Binding<Bool>) -> some View {
+        ZStack {
+            self
+            SplashView(isShown: isShown)
+        }
     }
 }
 
 struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashView()
+        SplashView(isShown: .constant(true))
     }
 }

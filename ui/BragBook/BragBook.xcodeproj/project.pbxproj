@@ -16,12 +16,16 @@
 		D3692A3C288C6588003D416C /* BragBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A3B288C6588003D416C /* BragBookTests.swift */; };
 		D3692A46288C6589003D416C /* BragBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A45288C6589003D416C /* BragBookUITests.swift */; };
 		D3692A48288C6589003D416C /* BragBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */; };
-		D72B48DA288D03CD00E60A39 /* CreateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */; };
 		D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A57288CE9E7003D416C /* JourneyUseCases.swift */; };
 		D3692A5A288CEA24003D416C /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A59288CEA24003D416C /* Journey.swift */; };
 		D3692A5C288CEF2D003D416C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A5B288CEF2D003D416C /* NetworkError.swift */; };
 		D3692A5E288CF2A5003D416C /* JourneyInteractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A5D288CF2A5003D416C /* JourneyInteractors.swift */; };
 		D3692A60288CFBD8003D416C /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A5F288CFBD8003D416C /* Prompt.swift */; };
+		D3692A66288D2CDF003D416C /* EntryInteractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A65288D2CDF003D416C /* EntryInteractors.swift */; };
+		D3692A68288D2CE1003D416C /* EntryUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A67288D2CE1003D416C /* EntryUseCases.swift */; };
+		D3987D8B288D2FD9007EB43A /* PersonInteractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D8A288D2FD9007EB43A /* PersonInteractors.swift */; };
+		D3987D8D288D2FDB007EB43A /* PersonUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D8C288D2FDB007EB43A /* PersonUseCases.swift */; };
+		D72B48DA288D03CD00E60A39 /* CreateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */; };
 		D7681443288C99DB0011C80B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7681442288C99DB0011C80B /* Person.swift */; };
 		D7804D49288C76920038AC07 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* Entry.swift */; };
 		D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D4A288C79630038AC07 /* EntryCardView.swift */; };
@@ -65,12 +69,16 @@
 		D3692A41288C6589003D416C /* BragBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BragBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3692A45288C6589003D416C /* BragBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITests.swift; sourceTree = "<group>"; };
 		D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryView.swift; sourceTree = "<group>"; };
 		D3692A57288CE9E7003D416C /* JourneyUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyUseCases.swift; sourceTree = "<group>"; };
 		D3692A59288CEA24003D416C /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		D3692A5B288CEF2D003D416C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D3692A5D288CF2A5003D416C /* JourneyInteractors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyInteractors.swift; sourceTree = "<group>"; };
 		D3692A5F288CFBD8003D416C /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
+		D3692A65288D2CDF003D416C /* EntryInteractors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryInteractors.swift; sourceTree = "<group>"; };
+		D3692A67288D2CE1003D416C /* EntryUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryUseCases.swift; sourceTree = "<group>"; };
+		D3987D8A288D2FD9007EB43A /* PersonInteractors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInteractors.swift; sourceTree = "<group>"; };
+		D3987D8C288D2FDB007EB43A /* PersonUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonUseCases.swift; sourceTree = "<group>"; };
+		D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryView.swift; sourceTree = "<group>"; };
 		D7681442288C99DB0011C80B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		D7804D48288C76920038AC07 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		D7804D4A288C79630038AC07 /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
@@ -141,12 +149,9 @@
 				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
 				0BB437C0288C8A0500C8570D /* JourneyView.swift */,
 				FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */,
-
 				0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */,
-
 				FCBBF221288D0F31004247E8 /* ProfileView.swift */,
 				D3692A2C288C6586003D416C /* SplashView.swift */,
-
 				D7F72ECC288CAE27006083D0 /* TagView.swift */,
 				D3692A2E288C6588003D416C /* Assets.xcassets */,
 				D7804D47288C760C0038AC07 /* Models */,
@@ -194,6 +199,8 @@
 		D3692A55288CE992003D416C /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				D3692A67288D2CE1003D416C /* EntryUseCases.swift */,
+				D3987D8C288D2FDB007EB43A /* PersonUseCases.swift */,
 				D3692A57288CE9E7003D416C /* JourneyUseCases.swift */,
 			);
 			path = UseCases;
@@ -202,6 +209,8 @@
 		D3692A56288CE997003D416C /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				D3692A65288D2CDF003D416C /* EntryInteractors.swift */,
+				D3987D8A288D2FD9007EB43A /* PersonInteractors.swift */,
 				D3692A5D288CF2A5003D416C /* JourneyInteractors.swift */,
 			);
 			path = Interactors;
@@ -353,34 +362,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3987D8D288D2FDB007EB43A /* PersonUseCases.swift in Sources */,
 				0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */,
 				D3692A5C288CEF2D003D416C /* NetworkError.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
-				D3692A5A288CEA24003D416C /* BragJourney.swift in Sources */,
-				D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */,
 				FCBBF22A288D31E2004247E8 /* EntryMainView.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
-				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,
-				D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */,
-				D7804D49288C76920038AC07 /* BragEntry.swift in Sources */,
 				0B9BCFEB288CF6E20027C347 /* HomeProgressCardComponent.swift in Sources */,
-
 				D3692A5A288CEA24003D416C /* Journey.swift in Sources */,
 				D3692A60288CFBD8003D416C /* Prompt.swift in Sources */,
-				D3692A5E288CF2A5003D416C /* GetAllJourneysInteractor.swift in Sources */,
-				D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */,
+				D3692A5E288CF2A5003D416C /* JourneyInteractors.swift in Sources */,
+				D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				FCBBF224288D25EA004247E8 /* EntryDetailsView.swift in Sources */,
 				D3692A5E288CF2A5003D416C /* JourneyInteractors.swift in Sources */,
 				D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */,
+				D3987D8B288D2FD9007EB43A /* PersonInteractors.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				FCBBF222288D0F31004247E8 /* ProfileView.swift in Sources */,
+				D3692A68288D2CE1003D416C /* EntryUseCases.swift in Sources */,
 				D7F72ED0288CD04F006083D0 /* CreateProfileView.swift in Sources */,
 				D7681443288C99DB0011C80B /* Person.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* Tag.swift in Sources */,
 				D7804D49288C76920038AC07 /* Entry.swift in Sources */,
-
 				FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */,
+				D3692A66288D2CDF003D416C /* EntryInteractors.swift in Sources */,
 				D72B48DA288D03CD00E60A39 /* CreateEntryView.swift in Sources */,
 				D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */,
 				FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */,

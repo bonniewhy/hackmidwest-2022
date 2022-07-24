@@ -20,8 +20,8 @@ public class PersonServiceImpl implements PersonService{
     }
 
     @Override
-    public Person getPersonById(String journeyId) {
-        return personRepository.getPersonById(journeyId);
+    public Person getPersonById(String personId) {
+        return personRepository.getPersonById(personId);
     }
 
     @Override

@@ -8,35 +8,86 @@
 import SwiftUI
 
 struct HomeScreenView: View {
-    var bragUser: Person
+    @StateObject var viewModel: ViewModel = ViewModel()
+
     var body: some View {
         VStack {
             Image("codergirl")
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle())
-            HStack {
-                Text(bragUser.firstName)
-                    .font(.headline)
-                Text(bragUser.lastName)
-                    .font(.headline)
-            }
+            Text("\(viewModel.currentUser?.firstName ?? "something") \(viewModel.currentUser?.lastName ?? "")")
+                .font(.headline)
             List {
-                ForEach(bragUser.entries, id: \.self) { entry in
+                ForEach(viewModel.entries, id: \.self) { entry in
                     EntryCardView(bragEntry: entry)
                 }
             }
         }
         .padding()
+        .loadingSplashScreen(isShown: $viewModel.isLoading)
+        .onAppear { viewModel.load() }
     }
 }
 
 struct HomeScreenView_Previews: PreviewProvider {
-    static var bragUser = Person.samplePerson
     static var previews: some View {
         NavigationView {
-            HomeScreenView(bragUser: Person.samplePerson)
+            HomeScreenView()
         }
     }
 }
 
+extension HomeScreenView {
+    class ViewModel: ObservableObject {
+        @Published var currentUser: Person?
+        @Published var allPeople: [Person] = []
+        @Published var entries: [Entry] = []
+        @Published var isLoading = false
+
+        let getPersonByIdUseCase: GetPersonByIdUseCase
+        let getAllPeopleUseCase: GetAllPeopleUseCase
+        var loadingDispatchGroup = DispatchGroup()
+        var loadingCompletion: () -> Void = { }
+
+        init(getPersonByIdUseCase: GetPersonByIdUseCase = GetPersonByIdInteractor(), getAllPeopleUseCase: GetAllPeopleUseCase = GetAllPeopleInteractor()) {
+            self.getPersonByIdUseCase = getPersonByIdUseCase
+            self.getAllPeopleUseCase = getAllPeopleUseCase
+        }
+
+        func load() {
+            startLoading()
+            fetchCurrentUser()
+
+            loadingDispatchGroup.notify(queue: .main) { [weak self] in
+                self?.completeLoading()
+            }
+        }
+
+        func startLoading() {
+            isLoading = true
+        }
+
+        func fetchCurrentUser() {
+            loadingDispatchGroup.enter()
+
+            // TODO: Figure out how to use the logged in user when we add authentication.
+            getPersonByIdUseCase.execute(with: "62dcc2a36ee3c01d77113f70") { [weak self] result in
+                guard let self = self else { return }
+                defer { self.loadingDispatchGroup.leave() }
+
+                switch result {
+                case .success(let person): self.currentUser = person
+                case .failure(let error): print(error)
+                }
+            }
+        }
+
+        func completeLoading() {
+            loadingCompletion()
+            withAnimation {
+                isLoading = false
+            }
+        }
+    }
+}
