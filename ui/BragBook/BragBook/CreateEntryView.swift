@@ -9,10 +9,8 @@ import SwiftUI
 
 struct CreateEntryView: View {
     init() {
-        UITableView.appearance().backgroundColor = UIColor(Color("Rose")) // Uses UIColor
-        UINavigationBar.appearance().largeTitleTextAttributes = [
-            .foregroundColor: UIColor(Color("Dark Green"))
-            ]
+        UITableView.appearance().backgroundColor = UIColor(Color("Rose"))
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(Color("Dark Green"))]
     }
     
     @State private var title: String = ""
