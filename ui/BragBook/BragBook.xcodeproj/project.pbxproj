@@ -17,10 +17,17 @@
 		D3692A48288C6589003D416C /* BragBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */; };
 		D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A57288CE9E7003D416C /* GetAllJourneysUseCase.swift */; };
 		D3692A5A288CEA24003D416C /* BragJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A59288CEA24003D416C /* BragJourney.swift */; };
+		D72B48DA288D03CD00E60A39 /* CreateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */; };
 		D7681443288C99DB0011C80B /* BragUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7681442288C99DB0011C80B /* BragUser.swift */; };
 		D7804D49288C76920038AC07 /* BragEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* BragEntry.swift */; };
+		D3692A5A288CEA24003D416C /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A59288CEA24003D416C /* Journey.swift */; };
+		D3692A5C288CEF2D003D416C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A5B288CEF2D003D416C /* NetworkError.swift */; };
+		D3692A5E288CF2A5003D416C /* GetAllJourneysInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A5D288CF2A5003D416C /* GetAllJourneysInteractor.swift */; };
+		D3692A60288CFBD8003D416C /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A5F288CFBD8003D416C /* Prompt.swift */; };
+		D7681443288C99DB0011C80B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7681442288C99DB0011C80B /* Person.swift */; };
+		D7804D49288C76920038AC07 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* Entry.swift */; };
 		D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D4A288C79630038AC07 /* EntryCardView.swift */; };
-		D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECA288CA883006083D0 /* BragTag.swift */; };
+		D7F72ECB288CA883006083D0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECA288CA883006083D0 /* Tag.swift */; };
 		D7F72ECD288CAE27006083D0 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECC288CAE27006083D0 /* TagView.swift */; };
 		D7F72ED0288CD04F006083D0 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */; };
 		FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */; };
@@ -60,10 +67,17 @@
 		D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3692A57288CE9E7003D416C /* GetAllJourneysUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllJourneysUseCase.swift; sourceTree = "<group>"; };
 		D3692A59288CEA24003D416C /* BragJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragJourney.swift; sourceTree = "<group>"; };
+		D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryView.swift; sourceTree = "<group>"; };
 		D7681442288C99DB0011C80B /* BragUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragUser.swift; sourceTree = "<group>"; };
 		D7804D48288C76920038AC07 /* BragEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragEntry.swift; sourceTree = "<group>"; };
+		D3692A59288CEA24003D416C /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		D3692A5B288CEF2D003D416C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D3692A5D288CF2A5003D416C /* GetAllJourneysInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllJourneysInteractor.swift; sourceTree = "<group>"; };
+		D3692A5F288CFBD8003D416C /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
+		D7681442288C99DB0011C80B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D7804D48288C76920038AC07 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		D7804D4A288C79630038AC07 /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
-		D7F72ECA288CA883006083D0 /* BragTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragTag.swift; sourceTree = "<group>"; };
+		D7F72ECA288CA883006083D0 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		D7F72ECC288CAE27006083D0 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
 		FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
@@ -121,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				D3692A2A288C6586003D416C /* BragBookApp.swift */,
+				D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */,
 				D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */,
 				D7804D4A288C79630038AC07 /* EntryCardView.swift */,
 				FCBBF223288D25EA004247E8 /* EntryDetailsView.swift */,
@@ -168,6 +183,7 @@
 			children = (
 				D3692A56288CE997003D416C /* Interactors */,
 				D3692A55288CE992003D416C /* UseCases */,
+				D3692A5B288CEF2D003D416C /* NetworkError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -183,6 +199,7 @@
 		D3692A56288CE997003D416C /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				D3692A5D288CF2A5003D416C /* GetAllJourneysInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -190,10 +207,11 @@
 		D7804D47288C760C0038AC07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D7804D48288C76920038AC07 /* BragEntry.swift */,
-				D7681442288C99DB0011C80B /* BragUser.swift */,
-				D7F72ECA288CA883006083D0 /* BragTag.swift */,
-				D3692A59288CEA24003D416C /* BragJourney.swift */,
+				D7804D48288C76920038AC07 /* Entry.swift */,
+				D7681442288C99DB0011C80B /* Person.swift */,
+				D7F72ECA288CA883006083D0 /* Tag.swift */,
+				D3692A5F288CFBD8003D416C /* Prompt.swift */,
+				D3692A59288CEA24003D416C /* Journey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,18 +351,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */,
+				D3692A5C288CEF2D003D416C /* NetworkError.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				D3692A5A288CEA24003D416C /* BragJourney.swift in Sources */,
+				D3692A5A288CEA24003D416C /* Journey.swift in Sources */,
+				D3692A60288CFBD8003D416C /* Prompt.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				FCBBF224288D25EA004247E8 /* EntryDetailsView.swift in Sources */,
+				D3692A5E288CF2A5003D416C /* GetAllJourneysInteractor.swift in Sources */,
 				D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
-				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,
 				FCBBF222288D0F31004247E8 /* ProfileView.swift in Sources */,
-				D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */,
 				D7F72ED0288CD04F006083D0 /* CreateProfileView.swift in Sources */,
-				D7804D49288C76920038AC07 /* BragEntry.swift in Sources */,
+				D7681443288C99DB0011C80B /* Person.swift in Sources */,
+				D7F72ECB288CA883006083D0 /* Tag.swift in Sources */,
+				D7804D49288C76920038AC07 /* Entry.swift in Sources */,
 				FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */,
+				D72B48DA288D03CD00E60A39 /* CreateEntryView.swift in Sources */,
 				D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */,
 				FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */,
 				D7F72ECD288CAE27006083D0 /* TagView.swift in Sources */,

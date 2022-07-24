@@ -1,5 +1,5 @@
 import Foundation
 
 protocol GetAllJourneysUseCase {
-    func execute(completion: @escaping (Result<[BragJourney]?, Error>) -> ())
+    func execute(with url: String, completion: @escaping (Result<[Journey], Error>) -> Void)
 }
