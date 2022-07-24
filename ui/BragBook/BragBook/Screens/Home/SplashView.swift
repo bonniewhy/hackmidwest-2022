@@ -13,23 +13,19 @@ struct SplashView: View {
     var body: some View {
         ZStack(alignment: .center) {
             VStack(alignment: .center) {
-                Text("Brag Book")
-                    .font(
-                        .largeTitle
-                            .weight(.bold)
-                    )
-                    .textCase(.uppercase)
-                    .padding(.bottom, 100)
-                    .foregroundColor(Color.white)
-                Text("Tiramisu bonbon donut brownie biscuit sesame snaps wafer apple pie pie. Pastry powder cake lollipop caramels.")
+                Image("bragbook-transparent")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 250, height: 250)
+                VStack {
+                Text("When someone says you can't do it - Do it twice and take pictures.")
                     .padding(.bottom)
                     .foregroundColor(Color.white)
-                Text("- Tira Misu")
-                    .padding(.leading, 225)
-                    .foregroundColor(Color.white)
+                }
+                .padding()
             }
             .background(
-                Image("sunflower")
+                Image("pink-background")
                     .scaledToFill()
                     .overlay(
                         Color.black
@@ -40,6 +36,7 @@ struct SplashView: View {
         .opacity(isShown ? 1 : 0)
     }
 }
+
 
 public extension View {
     func loadingSplashScreen(isShown: Binding<Bool>) -> some View {
