@@ -28,6 +28,10 @@
 		D3692A68288D2CE1003D416C /* EntryUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A67288D2CE1003D416C /* EntryUseCases.swift */; };
 		D3987D8B288D2FD9007EB43A /* PersonInteractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D8A288D2FD9007EB43A /* PersonInteractors.swift */; };
 		D3987D8D288D2FDB007EB43A /* PersonUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D8C288D2FDB007EB43A /* PersonUseCases.swift */; };
+		D3987D8F288D4FF2007EB43A /* PromptUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D8E288D4FF2007EB43A /* PromptUseCases.swift */; };
+		D3987D91288D509D007EB43A /* TagUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D90288D509D007EB43A /* TagUseCases.swift */; };
+		D3987D93288D5519007EB43A /* PromptInteractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D92288D5519007EB43A /* PromptInteractors.swift */; };
+
 		D72B48DA288D03CD00E60A39 /* CreateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */; };
 		D7681443288C99DB0011C80B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7681442288C99DB0011C80B /* Person.swift */; };
 		D7804D49288C76920038AC07 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* Entry.swift */; };
@@ -84,6 +88,10 @@
 		D3692A67288D2CE1003D416C /* EntryUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryUseCases.swift; sourceTree = "<group>"; };
 		D3987D8A288D2FD9007EB43A /* PersonInteractors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInteractors.swift; sourceTree = "<group>"; };
 		D3987D8C288D2FDB007EB43A /* PersonUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonUseCases.swift; sourceTree = "<group>"; };
+		D3987D8E288D4FF2007EB43A /* PromptUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptUseCases.swift; sourceTree = "<group>"; };
+		D3987D90288D509D007EB43A /* TagUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagUseCases.swift; sourceTree = "<group>"; };
+		D3987D92288D5519007EB43A /* PromptInteractors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptInteractors.swift; sourceTree = "<group>"; };
+		D3987D94288D5525007EB43A /* TagInteractors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagInteractors.swift; sourceTree = "<group>"; };
 		D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryView.swift; sourceTree = "<group>"; };
 		D7681442288C99DB0011C80B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		D7804D48288C76920038AC07 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
@@ -148,21 +156,11 @@
 			isa = PBXGroup;
 			children = (
 				D3692A2A288C6586003D416C /* BragBookApp.swift */,
-				D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */,
-				D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */,
-				D7804D4A288C79630038AC07 /* EntryCardView.swift */,
-				FCBBF223288D25EA004247E8 /* EntryDetailsView.swift */,
-				FCBBF229288D31E2004247E8 /* EntryMainView.swift */,
-				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
-				0BB437C0288C8A0500C8570D /* JourneyView.swift */,
-				FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */,
-				0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */,
-				FCBBF221288D0F31004247E8 /* ProfileView.swift */,
-				D3692A2C288C6586003D416C /* SplashView.swift */,
-				D7F72ECC288CAE27006083D0 /* TagView.swift */,
 				D3692A2E288C6588003D416C /* Assets.xcassets */,
+				D3987D9B288D5C2B007EB43A /* Components */,
 				D7804D47288C760C0038AC07 /* Models */,
 				D3692A30288C6588003D416C /* Preview Content */,
+				D3987D9C288D5C53007EB43A /* Screens */,
 				D3692A54288CE97D003D416C /* Services */,
 				0B9420CB288D53C5000971DB /* CourseCardComponent.swift */,
 				0B9420CD288D63AD000971DB /* FiveStarRating.swift */,
@@ -210,6 +208,8 @@
 			children = (
 				D3692A67288D2CE1003D416C /* EntryUseCases.swift */,
 				D3987D8C288D2FDB007EB43A /* PersonUseCases.swift */,
+				D3987D8E288D4FF2007EB43A /* PromptUseCases.swift */,
+				D3987D90288D509D007EB43A /* TagUseCases.swift */,
 				D3692A57288CE9E7003D416C /* JourneyUseCases.swift */,
 			);
 			path = UseCases;
@@ -220,9 +220,77 @@
 			children = (
 				D3692A65288D2CDF003D416C /* EntryInteractors.swift */,
 				D3987D8A288D2FD9007EB43A /* PersonInteractors.swift */,
+				D3987D92288D5519007EB43A /* PromptInteractors.swift */,
+				D3987D94288D5525007EB43A /* TagInteractors.swift */,
 				D3692A5D288CF2A5003D416C /* JourneyInteractors.swift */,
 			);
 			path = Interactors;
+			sourceTree = "<group>";
+		};
+		D3987D96288D5BE8007EB43A /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */,
+				D7804D4A288C79630038AC07 /* EntryCardView.swift */,
+				FCBBF223288D25EA004247E8 /* EntryDetailsView.swift */,
+				FCBBF229288D31E2004247E8 /* EntryMainView.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		D3987D97288D5BF4007EB43A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */,
+				FCBBF221288D0F31004247E8 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D3987D98288D5BFB007EB43A /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				0BB437C0288C8A0500C8570D /* JourneyView.swift */,
+			);
+			path = Journey;
+			sourceTree = "<group>";
+		};
+		D3987D99288D5C04007EB43A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
+				D3692A2C288C6586003D416C /* SplashView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D3987D9A288D5C0C007EB43A /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				D7F72ECC288CAE27006083D0 /* TagView.swift */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		D3987D9B288D5C2B007EB43A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */,
+				FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D3987D9C288D5C53007EB43A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D3987D96288D5BE8007EB43A /* Entry */,
+				D3987D99288D5C04007EB43A /* Home */,
+				D3987D98288D5BFB007EB43A /* Journey */,
+				D3987D97288D5BF4007EB43A /* Profile */,
+				D3987D9A288D5C0C007EB43A /* Tag */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		D7804D47288C760C0038AC07 /* Models */ = {
@@ -375,24 +443,32 @@
 				0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */,
 				D3692A5C288CEF2D003D416C /* NetworkError.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
+
 				0B9420CE288D63AD000971DB /* FiveStarRating.swift in Sources */,
+
 				D3692A5A288CEA24003D416C /* Journey.swift in Sources */,
 				D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7681443288C99DB0011C80B /* Person.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* Tag.swift in Sources */,
 				D7804D49288C76920038AC07 /* Entry.swift in Sources */,
+
 				0B9420CC288D53C5000971DB /* CourseCardComponent.swift in Sources */,
+
 				FCBBF22A288D31E2004247E8 /* EntryMainView.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				0B9BCFEB288CF6E20027C347 /* HomeProgressCardComponent.swift in Sources */,
 				D3692A5A288CEA24003D416C /* Journey.swift in Sources */,
+				D3987D95288D5525007EB43A /* TagInteractors.swift in Sources */,
 				D3692A60288CFBD8003D416C /* Prompt.swift in Sources */,
 				D3692A5E288CF2A5003D416C /* JourneyInteractors.swift in Sources */,
 				D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				FCBBF224288D25EA004247E8 /* EntryDetailsView.swift in Sources */,
+				D3987D93288D5519007EB43A /* PromptInteractors.swift in Sources */,
 				D3692A5E288CF2A5003D416C /* JourneyInteractors.swift in Sources */,
+				D3987D91288D509D007EB43A /* TagUseCases.swift in Sources */,
+				D3987D8F288D4FF2007EB43A /* PromptUseCases.swift in Sources */,
 				D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */,
 				D3987D8B288D2FD9007EB43A /* PersonInteractors.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,

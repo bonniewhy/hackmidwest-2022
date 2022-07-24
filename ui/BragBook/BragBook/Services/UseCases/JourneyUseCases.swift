@@ -11,3 +11,11 @@ protocol GetAllJourneysUseCase {
 protocol GetJourneyByIdUseCase {
     func execute(with journeyId: String, completion: @escaping (Result<Journey, Error>) -> Void)
 }
+
+protocol UpdateJourneyUseCase {
+    func execute(with journey: Journey, withId journeyId: String, completion: @escaping (Result<Journey, Error>) -> Void)
+}
+
+protocol DeleteJourneyUseCase {
+    func execute(with journeyId: String, completion: @escaping (Result<String, Error>) -> Void)
+}

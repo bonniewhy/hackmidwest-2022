@@ -1,12 +1,12 @@
 import Foundation
 
-class CreateNewEntryInteractor: CreateNewEntryUseCase {
-    func execute(with entry: Entry, completion: @escaping (Result<String, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/") else { return }
+class CreateNewPromptInteractor: CreateNewPromptUseCase {
+    func execute(with prompt: Prompt, completion: @escaping (Result<String, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/prompt/") else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.httpBody = try? JSONEncoder().encode(entry)
+        request.httpBody = try? JSONEncoder().encode(prompt)
 
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
@@ -15,8 +15,8 @@ class CreateNewEntryInteractor: CreateNewEntryUseCase {
             }
 
             do {
-                let entryId = try JSONDecoder().decode(String.self, from: data!)
-                completion(.success(entryId))
+                let promptId = try JSONDecoder().decode(String.self, from: data!)
+                completion(.success(promptId))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -27,9 +27,9 @@ class CreateNewEntryInteractor: CreateNewEntryUseCase {
     }
 }
 
-class GetAllEntriesInteractor: GetAllEntriesUseCase {
-    func execute(completion: @escaping (Result<[Entry], Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/") else { return }
+class GetAllPromptsInteractor: GetAllPromptsUseCase {
+    func execute(completion: @escaping (Result<[Prompt], Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/prompt/") else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -41,8 +41,8 @@ class GetAllEntriesInteractor: GetAllEntriesUseCase {
             }
 
             do {
-                let entries = try JSONDecoder().decode([Entry].self, from: data!)
-                completion(.success(entries))
+                let prompts = try JSONDecoder().decode([Prompt].self, from: data!)
+                completion(.success(prompts))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -53,9 +53,9 @@ class GetAllEntriesInteractor: GetAllEntriesUseCase {
     }
 }
 
-class GetEntryByIdInteractor: GetEntryByIdUseCase {
-    func execute(with entryId: String, completion: @escaping (Result<Entry, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/" + entryId) else { return }
+class GetPromptByIdInteractor: GetPromptByIdUseCase {
+    func execute(with promptId: String, completion: @escaping (Result<Prompt, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/prompt/" + promptId) else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -67,8 +67,8 @@ class GetEntryByIdInteractor: GetEntryByIdUseCase {
             }
 
             do {
-                let entry = try JSONDecoder().decode(Entry.self, from: data!)
-                completion(.success(entry))
+                let prompt = try JSONDecoder().decode(Prompt.self, from: data!)
+                completion(.success(prompt))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -79,13 +79,13 @@ class GetEntryByIdInteractor: GetEntryByIdUseCase {
     }
 }
 
-class UpdateEntryInteractor: UpdateEntryUseCase {
-    func execute(with entry: Entry, withId entryId: String, completion: @escaping (Result<Entry, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/" + entryId) else { return }
+class UpdatePromptInteractor: UpdatePromptUseCase {
+    func execute(with prompt: Prompt, withId promptId: String, completion: @escaping (Result<Prompt, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/prompt/" + promptId) else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
-        request.httpBody = try? JSONEncoder().encode(entry)
+        request.httpBody = try? JSONEncoder().encode(prompt)
 
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
@@ -94,8 +94,8 @@ class UpdateEntryInteractor: UpdateEntryUseCase {
             }
 
             do {
-                let entry = try JSONDecoder().decode(Entry.self, from: data!)
-                completion(.success(entry))
+                let prompt = try JSONDecoder().decode(Prompt.self, from: data!)
+                completion(.success(prompt))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -106,9 +106,9 @@ class UpdateEntryInteractor: UpdateEntryUseCase {
     }
 }
 
-class DeleteEntryInteractor: DeleteEntryUseCase {
-    func execute(with entryId: String, completion: @escaping (Result<String, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/" + entryId) else { return }
+class DeletePromptInteractor: DeletePromptUseCase {
+    func execute(with promptId: String, completion: @escaping (Result<String, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/prompt/" + promptId) else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"

@@ -1,12 +1,12 @@
 import Foundation
 
-class CreateNewEntryInteractor: CreateNewEntryUseCase {
-    func execute(with entry: Entry, completion: @escaping (Result<String, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/") else { return }
+class CreateNewTagInteractor: CreateNewTagUseCase {
+    func execute(with journey: Tag, completion: @escaping (Result<String, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/tag/") else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.httpBody = try? JSONEncoder().encode(entry)
+        request.httpBody = try? JSONEncoder().encode(journey)
 
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
@@ -15,8 +15,8 @@ class CreateNewEntryInteractor: CreateNewEntryUseCase {
             }
 
             do {
-                let entryId = try JSONDecoder().decode(String.self, from: data!)
-                completion(.success(entryId))
+                let tagId = try JSONDecoder().decode(String.self, from: data!)
+                completion(.success(tagId))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -27,9 +27,9 @@ class CreateNewEntryInteractor: CreateNewEntryUseCase {
     }
 }
 
-class GetAllEntriesInteractor: GetAllEntriesUseCase {
-    func execute(completion: @escaping (Result<[Entry], Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/") else { return }
+class GetAllTagsInteractor: GetAllTagsUseCase {
+    func execute(completion: @escaping (Result<[Tag], Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/tag/") else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -41,8 +41,8 @@ class GetAllEntriesInteractor: GetAllEntriesUseCase {
             }
 
             do {
-                let entries = try JSONDecoder().decode([Entry].self, from: data!)
-                completion(.success(entries))
+                let tags = try JSONDecoder().decode([Tag].self, from: data!)
+                completion(.success(tags))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -53,9 +53,9 @@ class GetAllEntriesInteractor: GetAllEntriesUseCase {
     }
 }
 
-class GetEntryByIdInteractor: GetEntryByIdUseCase {
-    func execute(with entryId: String, completion: @escaping (Result<Entry, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/" + entryId) else { return }
+class GetTagByIdInteractor: GetTagByIdUseCase {
+    func execute(with tagId: String, completion: @escaping (Result<Tag, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/tag/" + tagId) else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -67,8 +67,8 @@ class GetEntryByIdInteractor: GetEntryByIdUseCase {
             }
 
             do {
-                let entry = try JSONDecoder().decode(Entry.self, from: data!)
-                completion(.success(entry))
+                let tag = try JSONDecoder().decode(Tag.self, from: data!)
+                completion(.success(tag))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -79,13 +79,13 @@ class GetEntryByIdInteractor: GetEntryByIdUseCase {
     }
 }
 
-class UpdateEntryInteractor: UpdateEntryUseCase {
-    func execute(with entry: Entry, withId entryId: String, completion: @escaping (Result<Entry, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/" + entryId) else { return }
+class UpdateTagInteractor: UpdateTagUseCase {
+    func execute(with tag: Tag, withId tagId: String, completion: @escaping (Result<Tag, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/tag/" + tagId) else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
-        request.httpBody = try? JSONEncoder().encode(entry)
+        request.httpBody = try? JSONEncoder().encode(tag)
 
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
@@ -94,8 +94,8 @@ class UpdateEntryInteractor: UpdateEntryUseCase {
             }
 
             do {
-                let entry = try JSONDecoder().decode(Entry.self, from: data!)
-                completion(.success(entry))
+                let tag = try JSONDecoder().decode(Tag.self, from: data!)
+                completion(.success(tag))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -106,9 +106,9 @@ class UpdateEntryInteractor: UpdateEntryUseCase {
     }
 }
 
-class DeleteEntryInteractor: DeleteEntryUseCase {
-    func execute(with entryId: String, completion: @escaping (Result<String, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/entry/" + entryId) else { return }
+class DeleteTagInteractor: DeleteTagUseCase {
+    func execute(with tagId: String, completion: @escaping (Result<String, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/tag/" + tagId) else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
