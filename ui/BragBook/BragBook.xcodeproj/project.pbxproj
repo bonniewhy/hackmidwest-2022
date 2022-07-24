@@ -25,6 +25,7 @@
 		D7F72ED0288CD04F006083D0 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */; };
 		FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */; };
 		FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */; };
+		FCBBF222288D0F31004247E8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBBF221288D0F31004247E8 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
 		FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		FCBBF221288D0F31004247E8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,17 +119,18 @@
 			isa = PBXGroup;
 			children = (
 				D3692A2A288C6586003D416C /* BragBookApp.swift */,
-				D3692A2C288C6586003D416C /* SplashView.swift */,
+				D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */,
 				D7804D4A288C79630038AC07 /* EntryCardView.swift */,
 				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
+				0BB437C0288C8A0500C8570D /* JourneyView.swift */,
 				FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */,
+				FCBBF221288D0F31004247E8 /* ProfileView.swift */,
+				D3692A2C288C6586003D416C /* SplashView.swift */,
 				D7F72ECC288CAE27006083D0 /* TagView.swift */,
-				D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */,
 				D3692A2E288C6588003D416C /* Assets.xcassets */,
-				D3692A54288CE97D003D416C /* Services */,
 				D7804D47288C760C0038AC07 /* Models */,
 				D3692A30288C6588003D416C /* Preview Content */,
-				0BB437C0288C8A0500C8570D /* JourneyView.swift */,
+				D3692A54288CE97D003D416C /* Services */,
 			);
 			path = BragBook;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,
+				FCBBF222288D0F31004247E8 /* ProfileView.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */,
 				D7F72ED0288CD04F006083D0 /* CreateProfileView.swift in Sources */,
 				D7804D49288C76920038AC07 /* BragEntry.swift in Sources */,
