@@ -17,9 +17,10 @@
 		D7681443288C99DB0011C80B /* BragUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7681442288C99DB0011C80B /* BragUser.swift */; };
 		D7804D49288C76920038AC07 /* BragEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* BragEntry.swift */; };
 		D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D4A288C79630038AC07 /* EntryCardView.swift */; };
-		FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */; };
 		D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECA288CA883006083D0 /* BragTag.swift */; };
 		D7F72ECD288CAE27006083D0 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECC288CAE27006083D0 /* TagView.swift */; };
+		D7F72ED0288CD04F006083D0 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */; };
+		FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */; };
 		FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,9 +55,10 @@
 		D7681442288C99DB0011C80B /* BragUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragUser.swift; sourceTree = "<group>"; };
 		D7804D48288C76920038AC07 /* BragEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragEntry.swift; sourceTree = "<group>"; };
 		D7804D4A288C79630038AC07 /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
-		FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		D7F72ECA288CA883006083D0 /* BragTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragTag.swift; sourceTree = "<group>"; };
 		D7F72ECC288CAE27006083D0 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
+		FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
 				FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */,
 				D7F72ECC288CAE27006083D0 /* TagView.swift */,
+				D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */,
 				D3692A2E288C6588003D416C /* Assets.xcassets */,
 				D7804D47288C760C0038AC07 /* Models */,
 				D3692A30288C6588003D416C /* Preview Content */,
@@ -172,6 +175,8 @@
 			dependencies = (
 			);
 			name = BragBook;
+			packageProductDependencies = (
+			);
 			productName = BragBook;
 			productReference = D3692A27288C6586003D416C /* BragBook.app */;
 			productType = "com.apple.product-type.application";
@@ -244,6 +249,8 @@
 				Base,
 			);
 			mainGroup = D3692A1E288C6586003D416C;
+			packageReferences = (
+			);
 			productRefGroup = D3692A28288C6586003D416C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,6 +297,7 @@
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */,
+				D7F72ED0288CD04F006083D0 /* CreateProfileView.swift in Sources */,
 				D7804D49288C76920038AC07 /* BragEntry.swift in Sources */,
 				FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */,
 				D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */,
