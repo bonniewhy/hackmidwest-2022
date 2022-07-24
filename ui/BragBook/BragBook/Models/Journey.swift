@@ -19,16 +19,16 @@ struct Journey: Decodable, Hashable {
 }
 
 extension Journey {
-    static var sampleJourney: Journey =
-    Journey(
-        id: "1",
-        title: "Some Journey",
-        description: "Do this. I'm serious.",
-        prompts: Prompt.samplePromptArray,
-        startDate: Date(),
-        completedDate: nil,
-        isCompleted: false
-    )
-
-    static let sampleJourneyArray: [Journey] = [sampleJourney]
+//    static var sampleJourney: Journey =
+//    Journey(
+//        id: "1",
+//        title: "Some Journey",
+//        description: "Do this. I'm serious.",
+//        prompts: Prompt.samplePromptArray,
+//        startDate: Date(),
+//        completedDate: nil,
+//        isCompleted: false
+//    )
+//
+//    static let sampleJourneyArray: [Journey] = [sampleJourney]
 }

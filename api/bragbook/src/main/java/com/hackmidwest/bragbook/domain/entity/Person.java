@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.List;
 
 @Document("person")
@@ -28,8 +28,10 @@ public class Person {
     private String email;
     private String password;
     private String phoneNumber;
-    private ZonedDateTime dateCreated;
-    private ZonedDateTime lastLoggedIn;
+    private List<Entry> entries;
+    private List<Journey> journeys;
+    private Date dateCreated;
+    private Date lastLoggedIn;
     private String profile;
 
 }

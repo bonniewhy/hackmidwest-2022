@@ -29,7 +29,7 @@ public class PersonController {
     }
 
     @GetMapping(path = "/{personId}")
-    public Person getPersonByTitle(@PathVariable String personId) {
+    public Person getPersonById(@PathVariable String personId) {
         return personService.getPersonById(personId);
     }
 
