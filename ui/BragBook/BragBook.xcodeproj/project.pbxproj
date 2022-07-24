@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9420CC288D53C5000971DB /* CourseCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9420CB288D53C5000971DB /* CourseCardComponent.swift */; };
+		0B9420CE288D63AD000971DB /* FiveStarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9420CD288D63AD000971DB /* FiveStarRating.swift */; };
 		0B9BCFEB288CF6E20027C347 /* HomeProgressCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */; };
 		0B9BCFEF288D30D80027C347 /* JourneyProgressCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BCFEE288D30D80027C347 /* JourneyProgressCardComponent.swift */; };
 		0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB437C0288C8A0500C8570D /* JourneyView.swift */; };
@@ -29,7 +31,7 @@
 		D3987D8F288D4FF2007EB43A /* PromptUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D8E288D4FF2007EB43A /* PromptUseCases.swift */; };
 		D3987D91288D509D007EB43A /* TagUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D90288D509D007EB43A /* TagUseCases.swift */; };
 		D3987D93288D5519007EB43A /* PromptInteractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D92288D5519007EB43A /* PromptInteractors.swift */; };
-		D3987D95288D5525007EB43A /* TagInteractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D94288D5525007EB43A /* TagInteractors.swift */; };
+
 		D72B48DA288D03CD00E60A39 /* CreateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */; };
 		D7681443288C99DB0011C80B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7681442288C99DB0011C80B /* Person.swift */; };
 		D7804D49288C76920038AC07 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* Entry.swift */; };
@@ -62,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B9420CB288D53C5000971DB /* CourseCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCardComponent.swift; sourceTree = "<group>"; };
+		0B9420CD288D63AD000971DB /* FiveStarRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveStarRating.swift; sourceTree = "<group>"; };
 		0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProgressCardComponent.swift; sourceTree = "<group>"; };
 		0B9BCFEE288D30D80027C347 /* JourneyProgressCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyProgressCardComponent.swift; sourceTree = "<group>"; };
 		0BB437C0288C8A0500C8570D /* JourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyView.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				D3692A30288C6588003D416C /* Preview Content */,
 				D3987D9C288D5C53007EB43A /* Screens */,
 				D3692A54288CE97D003D416C /* Services */,
+				0B9420CB288D53C5000971DB /* CourseCardComponent.swift */,
+				0B9420CD288D63AD000971DB /* FiveStarRating.swift */,
 			);
 			path = BragBook;
 			sourceTree = "<group>";
@@ -437,12 +443,18 @@
 				0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */,
 				D3692A5C288CEF2D003D416C /* NetworkError.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
+
+				0B9420CE288D63AD000971DB /* FiveStarRating.swift in Sources */,
+
 				D3692A5A288CEA24003D416C /* Journey.swift in Sources */,
 				D3692A58288CE9E7003D416C /* JourneyUseCases.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7681443288C99DB0011C80B /* Person.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* Tag.swift in Sources */,
 				D7804D49288C76920038AC07 /* Entry.swift in Sources */,
+
+				0B9420CC288D53C5000971DB /* CourseCardComponent.swift in Sources */,
+
 				FCBBF22A288D31E2004247E8 /* EntryMainView.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				0B9BCFEB288CF6E20027C347 /* HomeProgressCardComponent.swift in Sources */,
