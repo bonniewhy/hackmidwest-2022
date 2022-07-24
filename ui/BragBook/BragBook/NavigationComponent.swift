@@ -8,41 +8,31 @@
 import SwiftUI
 
 struct NavigationComponent: View {
+    @State private var selectedTab = "One"
+
     var body: some View {
-        VStack {
-            VStack(spacing: 0) {
-               LinearGradient(colors: [.white, Color(.sRGB, white: 0.85, opacity: 1)], startPoint: .top, endPoint: .bottom)
-                   .frame(height: 6)
-                   .opacity(0.8)
-            }
+        
+        VStack(spacing: 0) {
             HStack {
-                VStack {
-                    Image(systemName: "pencil.circle.fill").foregroundColor(Color("Dark Green"))
-                        .font(.system(size: 40, weight: .regular))
-                    Text("Entries")
-                        .foregroundColor(Color("Dark Green"))
-                        .font(.system(size: 15, weight: .semibold))
+                TabView(selection: $selectedTab) {
+                    HomeScreenView(bragUser: BragUser.sampleUsers[0])
+                        .tabItem {
+                            Label("Home", systemImage: "house.circle.fill")
+                        }
+                    EntryMainView()
+                        .tabItem {
+                            Label("Entries", systemImage: "pencil.circle.fill")
+                            }
+                    ProfileView()
+                        .tabItem {
+                            Label("Profile", systemImage: "person.circle.fill")
+                            }
+                    JourneyView()
+                        .tabItem {
+                            Label("Journey", systemImage: "book.closed.circle.fill")
+                            }
                 }
-                    .padding(.leading, 50)
-                Spacer()
-                VStack {
-                    Image(systemName: "person.circle.fill")
-                        .foregroundColor(Color("Dark Green"))
-                        .font(.system(size: 40, weight: .regular))
-                    Text("Profile")
-                        .foregroundColor(Color("Dark Green"))
-                        .font(.system(size: 15, weight: .semibold))
-                }
-                Spacer()
-                VStack {
-                    Image(systemName: "book.closed.circle.fill")
-                        .foregroundColor(Color("Dark Green"))
-                        .font(.system(size: 40, weight: .regular))
-                    Text("Journey")
-                        .foregroundColor(Color("Dark Green"))
-                        .font(.system(size: 15, weight: .semibold))
-                }
-                    .padding(.trailing, 50)
+                .accentColor(Color("Dark Orange"))
             }
         }
     }
