@@ -1,10 +1,13 @@
 package com.hackmidwest.bragbook.rest;
 
+import com.hackmidwest.bragbook.domain.entity.Journey;
 import com.hackmidwest.bragbook.domain.entity.Type;
 import com.hackmidwest.bragbook.domain.service.TypeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
@@ -15,6 +18,11 @@ public class TypeController {
     @GetMapping(path = "/{typeId}")
     public Type getTypeByTitle(@PathVariable String typeId) {
         return typeService.getTypeById(typeId);
+    }
+
+    @GetMapping(path = "/")
+    public List<Type> getAllTypes() {
+        return typeService.getAllTypes();
     }
 
     @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})

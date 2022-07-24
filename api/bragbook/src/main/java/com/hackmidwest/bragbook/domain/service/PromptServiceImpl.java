@@ -5,6 +5,8 @@ import com.hackmidwest.bragbook.domain.repository.PromptRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class PromptServiceImpl implements PromptService{
@@ -20,6 +22,11 @@ public class PromptServiceImpl implements PromptService{
     @Override
     public Prompt getPromptById(String promptId){
         return promptRepository.getPromptById(promptId);
+    }
+
+    @Override
+    public List<Prompt> getAllPrompts(){
+        return promptRepository.getAllPrompts();
     }
 
     @Override

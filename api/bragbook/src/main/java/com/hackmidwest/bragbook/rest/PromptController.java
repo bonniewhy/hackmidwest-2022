@@ -9,6 +9,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/prompt")
@@ -20,6 +22,11 @@ public class PromptController {
     @GetMapping(path = "/{promptId}")
     public Prompt getPromptByTitle(@PathVariable String promptId) {
         return promptService.getPromptById(promptId);
+    }
+
+    @GetMapping(path = "/")
+    public List<Prompt> getAllPrompts() {
+        return promptService.getAllPrompts();
     }
 
     @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})

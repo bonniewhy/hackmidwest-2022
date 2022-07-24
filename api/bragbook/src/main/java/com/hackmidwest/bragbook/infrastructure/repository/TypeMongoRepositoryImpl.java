@@ -2,6 +2,7 @@ package com.hackmidwest.bragbook.infrastructure.repository;
 
 import com.hackmidwest.bragbook.domain.entity.Type;
 import com.hackmidwest.bragbook.domain.repository.TypeRepository;
+import com.hackmidwest.bragbook.exception.TypeNotFoundException;
 import org.springframework.context.annotation.Lazy;
 
 import java.util.List;
@@ -17,19 +18,18 @@ public class TypeMongoRepositoryImpl implements TypeRepository {
     @Override
     public Type getTypeById(String typeId) {
         Optional<Type> type = typeRepository.findById(typeId);
-        return type.get();
 
-//        if (type.isPresent()) {
-//            return type.get();
-//        } else {
-//            throw new JourneyNotFoundException();
-//        }
+        if (type.isPresent()) {
+            return type.get();
+        } else {
+            throw new TypeNotFoundException();
+        }
     }
 
-//    @Override
-//    public List<Type> getAll() {
-//        return typeRepository.findAll();
-//    }
+    @Override
+    public List<Type> getAllTypes() {
+        return typeRepository.findAll();
+    }
 
     @Override
     public Type saveType(Type type) {

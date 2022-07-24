@@ -1,9 +1,12 @@
 package com.hackmidwest.bragbook.domain.service;
 
+import com.hackmidwest.bragbook.domain.entity.Person;
 import com.hackmidwest.bragbook.domain.entity.Type;
 import com.hackmidwest.bragbook.domain.repository.TypeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -15,6 +18,11 @@ public class TypeServiceImpl implements TypeService{
     public String saveType(Type type) {
         Type savedType = typeRepository.saveType(type);
         return savedType.getId();
+    }
+
+    @Override
+    public List<Type> getAllTypes() {
+        return typeRepository.getAllTypes();
     }
 
     @Override
