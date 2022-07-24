@@ -36,6 +36,8 @@ public class JourneyServiceImpl implements JourneyService{
                 .id(journeyToUpdate.getId())
                 .title(journey.getTitle())
                 .description(journey.getDescription())
+                .picture(journey.getPicture())
+                .coverPhoto(journey.getCoverPhoto())
                 .completed(journey.isCompleted())
                 .completedDate(journey.getCompletedDate())
                 .startDate(journey.getStartDate())
