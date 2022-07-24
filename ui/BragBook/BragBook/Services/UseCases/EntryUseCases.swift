@@ -11,3 +11,11 @@ protocol GetAllEntriesUseCase {
 protocol GetEntryByIdUseCase {
     func execute(with entryId: String, completion: @escaping (Result<Entry, Error>) -> Void)
 }
+
+protocol UpdateEntryUseCase {
+    func execute(with entry: Entry, withId entryId: String, completion: @escaping (Result<Entry, Error>) -> Void)
+}
+
+protocol DeleteEntryUseCase {
+    func execute(with entryId: String, completion: @escaping (Result<String, Error>) -> Void)
+}
