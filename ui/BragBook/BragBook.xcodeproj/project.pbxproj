@@ -15,12 +15,14 @@
 		D3692A3C288C6588003D416C /* BragBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A3B288C6588003D416C /* BragBookTests.swift */; };
 		D3692A46288C6589003D416C /* BragBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A45288C6589003D416C /* BragBookUITests.swift */; };
 		D3692A48288C6589003D416C /* BragBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */; };
+		D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A57288CE9E7003D416C /* GetAllJourneysUseCase.swift */; };
+		D3692A5A288CEA24003D416C /* BragJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A59288CEA24003D416C /* BragJourney.swift */; };
 		D7681443288C99DB0011C80B /* BragUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7681442288C99DB0011C80B /* BragUser.swift */; };
 		D7804D49288C76920038AC07 /* BragEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D48288C76920038AC07 /* BragEntry.swift */; };
 		D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7804D4A288C79630038AC07 /* EntryCardView.swift */; };
-		FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */; };
 		D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECA288CA883006083D0 /* BragTag.swift */; };
 		D7F72ECD288CAE27006083D0 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F72ECC288CAE27006083D0 /* TagView.swift */; };
+		FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */; };
 		FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,12 +55,14 @@
 		D3692A41288C6589003D416C /* BragBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BragBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3692A45288C6589003D416C /* BragBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITests.swift; sourceTree = "<group>"; };
 		D3692A47288C6589003D416C /* BragBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3692A57288CE9E7003D416C /* GetAllJourneysUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllJourneysUseCase.swift; sourceTree = "<group>"; };
+		D3692A59288CEA24003D416C /* BragJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragJourney.swift; sourceTree = "<group>"; };
 		D7681442288C99DB0011C80B /* BragUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragUser.swift; sourceTree = "<group>"; };
 		D7804D48288C76920038AC07 /* BragEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragEntry.swift; sourceTree = "<group>"; };
 		D7804D4A288C79630038AC07 /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
-		FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		D7F72ECA288CA883006083D0 /* BragTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragTag.swift; sourceTree = "<group>"; };
 		D7F72ECC288CAE27006083D0 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,7 @@
 				FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */,
 				D7F72ECC288CAE27006083D0 /* TagView.swift */,
 				D3692A2E288C6588003D416C /* Assets.xcassets */,
+				D3692A54288CE97D003D416C /* Services */,
 				D7804D47288C760C0038AC07 /* Models */,
 				D3692A30288C6588003D416C /* Preview Content */,
 				0BB437C0288C8A0500C8570D /* JourneyView.swift */,
@@ -149,12 +154,37 @@
 			path = BragBookUITests;
 			sourceTree = "<group>";
 		};
+		D3692A54288CE97D003D416C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D3692A56288CE997003D416C /* Interactors */,
+				D3692A55288CE992003D416C /* UseCases */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D3692A55288CE992003D416C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				D3692A57288CE9E7003D416C /* GetAllJourneysUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		D3692A56288CE997003D416C /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
 		D7804D47288C760C0038AC07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				D7804D48288C76920038AC07 /* BragEntry.swift */,
 				D7681442288C99DB0011C80B /* BragUser.swift */,
 				D7F72ECA288CA883006083D0 /* BragTag.swift */,
+				D3692A59288CEA24003D416C /* BragJourney.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,8 +320,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */,
-				D3692A2D288C6586003D416C /* ContentView.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
+				D3692A5A288CEA24003D416C /* BragJourney.swift in Sources */,
+				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
+				D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */,
