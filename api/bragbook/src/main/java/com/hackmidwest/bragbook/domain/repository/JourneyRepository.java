@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface JourneyRepository {
     Journey getJourneyById(String journeyId);
-    List<Journey> getAll();
+    List<Journey> getAllJourneys();
     Journey saveJourney(Journey journey);
     void deleteJourney(String journeyId);
 }

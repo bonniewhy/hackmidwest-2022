@@ -1,0 +1,836 @@
+{
+	"info": {
+		"_postman_id": "a626f0f5-36d6-4969-ab5f-54303f79ca97",
+		"name": "Hack Midwest 2022",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5554201"
+	},
+	"item": [
+		{
+			"name": "Affirmation",
+			"item": [
+				{
+					"name": "GetAffirmationById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/affirmation/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"affirmation",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAffirmations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/affirmation/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"affirmation",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateNewAffirmation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"something\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/affirmation/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"affirmation",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAffirmation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"update name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/affirmation/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"affirmation",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAffirmation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/affirmation/62dc8377475ee82831a8505a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"affirmation",
+								"62dc8377475ee82831a8505a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entry",
+			"item": [
+				{
+					"name": "GetEntryById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/entry/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entry",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEntries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/entry/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entry",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateNewEntry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"something\",\n    \"description\" : \"again something\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/entry/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entry",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEntry",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"update name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/journey/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journey",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEntry",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/entry/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entry",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Journey",
+			"item": [
+				{
+					"name": "GetJourneyById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/journey/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journey",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetJourneys",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/journey/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journey",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateNewJourney",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"something\",\n    \"description\" : \"again something\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/journey/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journey",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateJourney",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"update name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/journey/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journey",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteJourney",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/journey/62dc8377475ee82831a8505a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journey",
+								"62dc8377475ee82831a8505a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "GetPersonById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/person/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"person",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPeople",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/person/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"person",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateNewPerson",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"something\",\n    \"description\" : \"again something\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/person/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"person",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePerson",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"update name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/person/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"person",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePerson",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/person/62dc8377475ee82831a8505a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"person",
+								"62dc8377475ee82831a8505a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prompt",
+			"item": [
+				{
+					"name": "GetPromptById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/prompt/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prompt",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPrompt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/prompt/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prompt",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateNewPrompt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"something\",\n    \"description\" : \"again something\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/prompt/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prompt",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePrompt",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"update name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/journey/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journey",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePrompt",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/prompt/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prompt",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Status",
+			"item": [
+				{
+					"name": "GetStatusById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/status/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"status",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStatuses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/status/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"status",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateNewStatus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"something\",\n    \"description\" : \"again something\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/status/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"status",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateStatus",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"update name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/status/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"status",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteStatus",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/status/62dc8377475ee82831a8505a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"status",
+								"62dc8377475ee82831a8505a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Type",
+			"item": [
+				{
+					"name": "GetTypeById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/type/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"type",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTypes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/type/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"type",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateNewType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"something\",\n    \"description\" : \"again something\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/type/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"type",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateType",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"update name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/type/62dc824d7147d346eb8763c2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"type",
+								"62dc824d7147d346eb8763c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteType",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/type/62dc8377475ee82831a8505a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"type",
+								"62dc8377475ee82831a8505a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

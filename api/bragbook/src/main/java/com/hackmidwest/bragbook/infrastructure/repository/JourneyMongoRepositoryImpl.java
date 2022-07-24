@@ -9,10 +9,16 @@ import java.util.List;
 import java.util.Optional;
 
 public class JourneyMongoRepositoryImpl implements JourneyRepository {
-    private JourneyMongoRepository journeyRepository;
+
+    private final JourneyMongoRepository journeyRepository;
 
     public JourneyMongoRepositoryImpl(@Lazy JourneyMongoRepository journeyRepository) {
         this.journeyRepository = journeyRepository;
+    }
+
+    @Override
+    public Journey saveJourney(Journey journey) {
+        return journeyRepository.save(journey);
     }
 
     @Override
@@ -27,13 +33,8 @@ public class JourneyMongoRepositoryImpl implements JourneyRepository {
     }
 
     @Override
-    public List<Journey> getAll() {
+    public List<Journey> getAllJourneys() {
         return journeyRepository.findAll();
-    }
-
-    @Override
-    public Journey saveJourney(Journey journey) {
-        return journeyRepository.save(journey);
     }
 
     @Override
