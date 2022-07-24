@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Tag: Decodable, Hashable {
+struct Tag: Codable, Hashable {
     let id: String
     let title: String
     let journeys: [Journey]

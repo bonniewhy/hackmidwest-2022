@@ -1,6 +1,6 @@
 import Foundation
 
-struct Journey: Decodable, Hashable {
+struct Journey: Codable, Hashable {
     let id: String
     let title: String?
     let description: String?

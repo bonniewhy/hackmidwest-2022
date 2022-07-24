@@ -1,6 +1,6 @@
 import Foundation
 
-struct Prompt: Decodable, Hashable {
+struct Prompt: Codable, Hashable {
     let id: String
     let title: String
     let body: String
