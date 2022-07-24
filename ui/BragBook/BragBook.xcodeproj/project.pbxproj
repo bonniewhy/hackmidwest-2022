@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9BCFEB288CF6E20027C347 /* HomeProgressCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */; };
 		0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB437C0288C8A0500C8570D /* JourneyView.swift */; };
 		D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A2A288C6586003D416C /* BragBookApp.swift */; };
 		D3692A2D288C6586003D416C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3692A2C288C6586003D416C /* SplashView.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProgressCardComponent.swift; sourceTree = "<group>"; };
 		0BB437C0288C8A0500C8570D /* JourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyView.swift; sourceTree = "<group>"; };
 		D3692A27288C6586003D416C /* BragBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BragBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3692A2A288C6586003D416C /* BragBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BragBookApp.swift; sourceTree = "<group>"; };
@@ -136,8 +138,12 @@
 				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
 				0BB437C0288C8A0500C8570D /* JourneyView.swift */,
 				FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */,
+
+				0B9BCFEA288CF6E20027C347 /* HomeProgressCardComponent.swift */,
+
 				FCBBF221288D0F31004247E8 /* ProfileView.swift */,
 				D3692A2C288C6586003D416C /* SplashView.swift */,
+
 				D7F72ECC288CAE27006083D0 /* TagView.swift */,
 				D3692A2E288C6588003D416C /* Assets.xcassets */,
 				D7804D47288C760C0038AC07 /* Models */,
@@ -276,7 +282,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					D3692A26288C6586003D416C = {
 						CreatedOnToolsVersion = 13.3;
@@ -348,8 +354,17 @@
 				D3692A5C288CEF2D003D416C /* NetworkError.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				D3692A5A288CEA24003D416C /* BragJourney.swift in Sources */,
+				D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */,
+				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
+				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,
+				D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */,
+				D7804D49288C76920038AC07 /* BragEntry.swift in Sources */,
+				0B9BCFEB288CF6E20027C347 /* HomeProgressCardComponent.swift in Sources */,
+
 				D3692A5A288CEA24003D416C /* Journey.swift in Sources */,
 				D3692A60288CFBD8003D416C /* Prompt.swift in Sources */,
+				D3692A5E288CF2A5003D416C /* GetAllJourneysInteractor.swift in Sources */,
+				D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				FCBBF224288D25EA004247E8 /* EntryDetailsView.swift in Sources */,
 				D3692A5E288CF2A5003D416C /* JourneyInteractors.swift in Sources */,
@@ -360,6 +375,7 @@
 				D7681443288C99DB0011C80B /* Person.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* Tag.swift in Sources */,
 				D7804D49288C76920038AC07 /* Entry.swift in Sources */,
+
 				FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */,
 				D72B48DA288D03CD00E60A39 /* CreateEntryView.swift in Sources */,
 				D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */,
