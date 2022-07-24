@@ -11,13 +11,8 @@ struct EntryCardView: View {
     var bragEntry: BragEntry
     var body: some View {
         VStack {
-            ForEach(bragEntry.tags, id: \.self) { tag in
-                Text(tag)
-                    .font(.largeTitle)
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(.blue)
-                    .clipShape(Capsule())
+            ForEach(bragEntry.tags) { tag in
+                TagView(bragTag: tag)
             }
             Text(bragEntry.title)
                 .font(.headline)
