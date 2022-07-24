@@ -5,6 +5,8 @@ import com.hackmidwest.bragbook.domain.repository.JourneyRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class JourneyServiceImpl implements JourneyService{
@@ -20,6 +22,11 @@ public class JourneyServiceImpl implements JourneyService{
     @Override
     public Journey getJourneyById(String journeyId) {
         return journeyRepository.getJourneyById(journeyId);
+    }
+
+    @Override
+    public List<Journey> getAllJourneys() {
+        return journeyRepository.getAllJourneys();
     }
 
     @Override

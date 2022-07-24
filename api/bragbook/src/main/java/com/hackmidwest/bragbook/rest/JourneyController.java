@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/journey")
@@ -20,15 +22,20 @@ public class JourneyController {
 
     private final JourneyService journeyService;
 
+    @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})
+    public String saveJourney(@RequestBody Journey journey) {
+        String savedJourneyId = journeyService.saveJourney(journey);
+        return "journey saved: " + savedJourneyId;
+    }
+
     @GetMapping(path = "/{journeyId}")
     public Journey getJourneyByTitle(@PathVariable String journeyId) {
         return journeyService.getJourneyById(journeyId);
     }
 
-    @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public String saveJourney(@RequestBody Journey journey) {
-        String savedJourneyId = journeyService.saveJourney(journey);
-        return "journey saved: " + savedJourneyId;
+    @GetMapping(path = "/")
+    public List<Journey> getAllJourneys() {
+        return journeyService.getAllJourneys();
     }
 
     @PutMapping(path = "/{journeyId}", consumes = {MediaType.APPLICATION_JSON_VALUE})
