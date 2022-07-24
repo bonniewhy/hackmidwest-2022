@@ -18,9 +18,9 @@ struct TagView: View {
     }
 }
 
-struct TagView_Previews: PreviewProvider {
-    static var bragTag = Tag.sampleTag
-    static var previews: some View {
-        TagView(bragTag: bragTag)
-    }
-}
+//struct TagView_Previews: PreviewProvider {
+//    static var bragTag = Tag.sampleTag
+//    static var previews: some View {
+//        TagView(bragTag: bragTag)
+//    }
+//}

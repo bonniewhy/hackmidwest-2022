@@ -22,9 +22,9 @@ struct EntryCardView: View {
     }
 }
 
-struct EntryCardView_Previews: PreviewProvider {
-    static var bragEntry = Entry.sampleEntry
-     static var previews: some View {
-         EntryCardView(bragEntry: bragEntry)
-     }
-}
+//struct EntryCardView_Previews: PreviewProvider {
+//    static var bragEntry = Entry.sampleEntry
+//     static var previews: some View {
+//         EntryCardView(bragEntry: bragEntry)
+//     }
+//}

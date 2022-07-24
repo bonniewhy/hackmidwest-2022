@@ -1,8 +1,8 @@
 import Foundation
 
-class GetAllJourneysInteractor: GetAllJourneysUseCase {
-    func execute(completion: @escaping (Result<[Journey], Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/journey/") else { return }
+class GetAllPeopleInteractor: GetAllPeopleUseCase {
+    func execute(completion: @escaping (Result<[Person], Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/person/") else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -14,8 +14,8 @@ class GetAllJourneysInteractor: GetAllJourneysUseCase {
             }
 
             do {
-                let journeys = try JSONDecoder().decode([Journey].self, from: data!)
-                completion(.success(journeys))
+                let people = try JSONDecoder().decode([Person].self, from: data!)
+                completion(.success(people))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -26,9 +26,9 @@ class GetAllJourneysInteractor: GetAllJourneysUseCase {
     }
 }
 
-class GetJourneyByIdInteractor: GetJourneyByIdUseCase {
-    func execute(with journeyId: String, completion: @escaping (Result<Journey, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/journey/" + journeyId) else { return }
+class GetPersonByIdInteractor: GetPersonByIdUseCase {
+    func execute(with personId: String, completion: @escaping (Result<Person, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/person/" + personId) else { return }
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -40,8 +40,8 @@ class GetJourneyByIdInteractor: GetJourneyByIdUseCase {
             }
 
             do {
-                let journey = try JSONDecoder().decode(Journey.self, from: data!)
-                completion(.success(journey))
+                let person = try JSONDecoder().decode(Person.self, from: data!)
+                completion(.success(person))
 
             } catch let jsonError {
                 completion(.failure(jsonError))
