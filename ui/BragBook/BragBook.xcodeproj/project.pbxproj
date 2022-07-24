@@ -289,17 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */,
 				D3692A2D288C6586003D416C /* ContentView.swift in Sources */,
-=======
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,
 				D7F72ECB288CA883006083D0 /* BragTag.swift in Sources */,
 				D7804D49288C76920038AC07 /* BragEntry.swift in Sources */,
 				FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */,
->>>>>>> 87387d372d4421e368f34e8782fa3f627e823475
 				D3692A2B288C6586003D416C /* BragBookApp.swift in Sources */,
 				FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */,
 				D7F72ECD288CAE27006083D0 /* TagView.swift in Sources */,
