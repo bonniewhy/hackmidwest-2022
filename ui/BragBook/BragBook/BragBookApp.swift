@@ -13,7 +13,7 @@ struct BragBookApp: App {
         WindowGroup {
             NavigationView {
                 SplashView()
-                HomeScreenView(bragUser: BragUser.sampleUsers[0])
+                HomeScreenView(bragUser: Person.samplePerson)
             }
         }
     }
