@@ -22,6 +22,8 @@ public class Journey {
 
     private String title;
     private String description;
+    private String picture;
+    private String coverPhoto;
     private List<Prompt> prompts;
     private ZonedDateTime startDate;
     private ZonedDateTime completedDate;
