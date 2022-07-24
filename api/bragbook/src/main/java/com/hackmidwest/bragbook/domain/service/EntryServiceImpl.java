@@ -39,7 +39,7 @@ public class EntryServiceImpl implements EntryService {
                 .types(entry.getTypes())
                 .people(entry.getPeople())
                 .isPublic(entry.isPublic())
-                .status(entry.getStatus())
+//                .status(entry.getStatus())
                 .completedDate(entry.getCompletedDate())
                 .build();
 
