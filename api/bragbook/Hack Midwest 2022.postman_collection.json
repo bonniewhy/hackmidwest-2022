@@ -54,7 +54,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\" : \"something\",\n    \"description\" : \"again something\"\n}",
+							"raw": "{\n    \"title\" : \"something\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"

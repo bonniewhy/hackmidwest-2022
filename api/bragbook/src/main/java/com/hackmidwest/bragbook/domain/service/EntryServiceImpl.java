@@ -43,7 +43,7 @@ public class EntryServiceImpl implements EntryService {
                 .completedDate(entry.getCompletedDate())
                 .build();
 
-        entryRepository.saveEntry(entry);
+        entryRepository.saveEntry(updatedEntry);
         return updatedEntry;
     }
 

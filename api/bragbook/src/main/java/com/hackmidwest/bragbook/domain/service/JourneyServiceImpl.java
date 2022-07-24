@@ -42,7 +42,7 @@ public class JourneyServiceImpl implements JourneyService{
                 .prompts(journey.getPrompts())
                 .build();
 
-        journeyRepository.saveJourney(journey);
+        journeyRepository.saveJourney(updatedJourney);
         return updatedJourney;
     }
 
