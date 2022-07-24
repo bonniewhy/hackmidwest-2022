@@ -21,8 +21,8 @@ public class PromptMongoRepositoryImpl implements PromptRepository {
     }
 
     @Override
-    public void savePrompt(Prompt prompt) {
-        promptRepository.save(prompt);
+    public Prompt savePrompt(Prompt prompt) {
+        return promptRepository.save(prompt);
     }
 
     @Override

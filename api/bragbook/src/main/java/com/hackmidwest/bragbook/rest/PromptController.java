@@ -14,18 +14,18 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/prompt")
 public class PromptController {
 
-    private final PromptRepository promptRepository;
+//    private final PromptRepository promptRepository;
     private final PromptService promptService;
 
     @GetMapping(path = "/{promptId}")
     public Prompt getPromptByTitle(@PathVariable String promptId) {
-        return promptRepository.getPromptById(promptId);
+        return promptService.getPromptById(promptId);
     }
 
     @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})
     public String savePrompt(@RequestBody Prompt prompt) {
-        promptRepository.savePrompt(prompt);
-        return "prompt saved";
+        String savedPromptId = promptService.savePrompt(prompt);
+        return "prompt saved " + savedPromptId;
     }
 
     @PutMapping(path = "/{promptId}", consumes = {MediaType.APPLICATION_JSON_VALUE})
@@ -35,7 +35,7 @@ public class PromptController {
 
     @DeleteMapping(path = "/{promptId}")
     public String deletePrompt(@PathVariable String promptId) {
-        promptRepository.deletePrompt(promptId);
+        promptService.deletePrompt(promptId);
         return "prompt deleted";
     }
 
