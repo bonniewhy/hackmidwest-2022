@@ -256,7 +256,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					D3692A26288C6586003D416C = {
 						CreatedOnToolsVersion = 13.3;
@@ -325,7 +325,6 @@
 				0BB437C1288C8A0500C8570D /* JourneyView.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				D3692A5A288CEA24003D416C /* BragJourney.swift in Sources */,
-				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
 				D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
 				D7681443288C99DB0011C80B /* BragUser.swift in Sources */,

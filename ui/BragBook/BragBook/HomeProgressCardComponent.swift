@@ -13,10 +13,13 @@ struct HomeProgressCardComponent: View {
     var body: some View {
         VStack {
             Text("JUMP BACK INTO:").font(.subheadline)
+                .foregroundColor(Color("green"))
+                
                 .padding(.bottom, 1)
                 .padding(.top)
             
             Text("OVERCOMING IMPOSTER SYNDROME")
+                .foregroundColor(Color("Dark Green"))
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.center)
                 .padding(3)
@@ -29,12 +32,13 @@ struct HomeProgressCardComponent: View {
                 .padding(.leading)
             
             ProgressView(value: completedAmount, total: 100)
-                .tint(Color("Dark Green"))
+                .tint(Color("green"))
                 .scaleEffect(x: 1, y:4 , anchor: .center)
                 .padding()
            
             
             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu ac tortor dignissim convallis aenean.")
+                .foregroundColor(Color("Dark Green"))
                 .multilineTextAlignment(.center)
                 .padding([.leading, .trailing], 14)
                 .padding([.top, .bottom], 8)
@@ -44,7 +48,7 @@ struct HomeProgressCardComponent: View {
         .cornerRadius(6)
         .padding(8)
         .padding(.bottom, 3)
-        .shadow(color: Color.gray, radius: 7, x: 0, y: 4)
+        .shadow(color: Color("Dark Green"), radius: 7, x: 1, y: 4)
         
     }
 }
