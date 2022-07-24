@@ -33,6 +33,7 @@
 		FC2C8BA8288CA83600EB9613 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */; };
 		FC7D9FC7288C8899004FC5DC /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */; };
 		FCBBF222288D0F31004247E8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBBF221288D0F31004247E8 /* ProfileView.swift */; };
+		FCBBF224288D25EA004247E8 /* EntryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBBF223288D25EA004247E8 /* EntryDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
 		FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		FCBBF221288D0F31004247E8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FCBBF223288D25EA004247E8 /* EntryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				D72B48D9288D03CD00E60A39 /* CreateEntryView.swift */,
 				D7F72ECF288CD04F006083D0 /* CreateProfileView.swift */,
 				D7804D4A288C79630038AC07 /* EntryCardView.swift */,
+				FCBBF223288D25EA004247E8 /* EntryDetailsView.swift */,
 				FC7D9FC6288C8899004FC5DC /* HomeScreenView.swift */,
 				0BB437C0288C8A0500C8570D /* JourneyView.swift */,
 				FC2C8BA7288CA83600EB9613 /* NavigationComponent.swift */,
@@ -354,6 +357,7 @@
 				D3692A5A288CEA24003D416C /* Journey.swift in Sources */,
 				D3692A60288CFBD8003D416C /* Prompt.swift in Sources */,
 				D3692A2D288C6586003D416C /* SplashView.swift in Sources */,
+				FCBBF224288D25EA004247E8 /* EntryDetailsView.swift in Sources */,
 				D3692A5E288CF2A5003D416C /* GetAllJourneysInteractor.swift in Sources */,
 				D3692A58288CE9E7003D416C /* GetAllJourneysUseCase.swift in Sources */,
 				D7804D4B288C79630038AC07 /* EntryCardView.swift in Sources */,
