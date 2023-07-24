@@ -15,12 +15,12 @@ struct EntryCardView: View {
                 .font(.title)
             Text(bragEntry.body ?? "")
                 .font(.body)
-//            ForEach(bragEntry.tags, id: \.self) { tag in
-//                TagView(bragTag: tag)
-//            }
-//            Text(bragEntry.title)
-//                .font(.headline)
-//            Text(bragEntry.body)
+            ForEach(bragEntry.tags!) { tag in
+                TagView(bragTag: tag)
+            }
+            Text(bragEntry.title ?? "")
+                .font(.headline)
+            Text(bragEntry.body ?? "")
         }
         .padding()
     }

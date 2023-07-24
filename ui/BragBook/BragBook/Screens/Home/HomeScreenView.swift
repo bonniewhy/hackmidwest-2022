@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeScreenView: View {
     @StateObject var viewModel: ViewModel = ViewModel()
+    let currentUser = FakePerson.samplePerson
 
     var body: some View {
         VStack {
@@ -16,11 +17,11 @@ struct HomeScreenView: View {
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle())
-            Text("\(viewModel.currentUser?.firstName ?? "something") \(viewModel.currentUser?.lastName ?? "")")
+            Text("\(currentUser.firstName!) \(currentUser.lastName!)")
                 .font(.headline)
             List {
-                ForEach(viewModel.entries, id: \.self) { entry in
-//                    EntryCardView(bragEntry: entry)
+                ForEach(currentUser.entries!) { entry in
+                    EntryCardView(bragEntry: entry)
                 }
             }
 
@@ -31,10 +32,8 @@ struct HomeScreenView: View {
                     NavigationLink("Create Profile View", destination: CreateProfileView())
                     NavigationLink("Entry Details View", destination: EntryDetailsView())
                     NavigationLink("Entry Main View", destination: EntryMainView(entries: FakeEntry.sampleEntryArray))
-//                    NavigationLink("Journey Details View"), destination: JourneyDetailsView()
                     NavigationLink("Journey View", destination: JourneyView())
                     NavigationLink("Profile View", destination: ProfileView())
-//                    NavigationLink("Tag View", destination: TagView())
                 }
             }
         }

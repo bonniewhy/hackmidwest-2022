@@ -40,13 +40,13 @@ struct JourneyView: View {
 
                 HStack {
                 Text("Show All")
-                    .foregroundColor(Color("Green"))
+                    .foregroundColor(Color("green"))
                     .font(.system(size: 15, weight: .semibold))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.top, 30)
                     .padding(.leading, 107)
                     .padding(.bottom, 15)
-                    Image(systemName: "chevron.forward").foregroundColor(Color("Green"))
+                    Image(systemName: "chevron.forward").foregroundColor(Color("green"))
                         .font(.system(size: 15, weight: .semibold))
                         .padding(.top, 30)
                         .padding(.trailing, 20)

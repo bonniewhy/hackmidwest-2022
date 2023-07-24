@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TagView: View {
-    var bragTag: Tag
+    var bragTag: FakeTag
     var body: some View {
         Text(bragTag.title)
             .padding()

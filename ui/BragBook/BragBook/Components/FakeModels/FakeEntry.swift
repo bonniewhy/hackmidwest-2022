@@ -11,8 +11,8 @@ struct FakeEntry: Identifiable {
     let id: UUID
     let title: String?
     let body: String?
-    let tags: [Tag]?
-    let people: [Person]?
+    let tags: [FakeTag]?
+    let people: [FakePerson]?
     let isPublic: Bool?
     let completedDate: Date?
 
@@ -32,10 +32,8 @@ extension FakeEntry {
         id: UUID(),
         title: "Pastry Card Component",
         body: "I created a card view in SwiftUI for bakery shop's application.",
-        tags: [],
-        people: [],
-//        tags: FakeTag.sampleTagArray,
-//        people: FakePerson.samplePersonArray,
+        tags: FakeTag.sampleTagArray,
+        people: FakePerson.samplePersonArray,
         isPublic: false,
         completedDate: Date()
     )
@@ -45,11 +43,8 @@ extension FakeEntry {
             id: UUID(),
             title: "Pastry Card Component",
             body: "I created a card view in SwiftUI for bakery shop's application.",
-            tags: [],
-            people: [],
-
-//            tags: FakeTag.sampleTagArray,
-//            people: FakePerson.samplePersonArray,
+            tags: FakeTag.sampleTagArray,
+            people: FakePerson.samplePersonArray,
             isPublic: false,
             completedDate: Date()
         ),
